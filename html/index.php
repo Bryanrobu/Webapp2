@@ -8,7 +8,6 @@
 </head>
 <body>
     <?php include_once ('includes/header.php'); ?>
-    test
     <?php include_once ('includes/footer.php'); ?>
 </body>
 </html>

@@ -61,8 +61,8 @@
                 </div>
             </div>
             <div class="footer-container row">
-                <p class="footer-text">Horizon Travels</p>
-                <p class="footer-text">Horizon Travels</p>
+                <a><img src="../images/Facebook.png"></a>
+                <a><img src="../images/Instagram.png"></a>
             </div>
         </div>
     </footer>
