@@ -8,7 +8,7 @@
 <body>
     <footer>
         <div class="footer">
-            <div class="vertical-footer-container">
+            <div class="footer-container row">
                 <p class="footer-text">
                     Openingstijden: <br>
                     Maandag t/m Vrijdag: 08:00 - 20:00 <br>
@@ -16,13 +16,52 @@
                     Zondag: gesloten<br>
                     <br>
                     Telefonisch bereikbaar tijdens openingstijden,<br>
-                    
+                    E-mails worden binnen 24 uur beantwoord<br>
                 </p>
             </div>
-            <div class="vertical-footer-container">
-                <p class="footer-text">Horizon Travels</p>
+            <div class="footer-container row">
+                <div class="column">
+                    <a class="footer-links">
+                        Horizon Travels
+                    </a>
+                    <br>
+                    <a class="footer-links">
+                        Ziekerstraat 77,<br>
+                        6511 LG Nijmegen
+                    </a>
+                    <br>
+                    <a class="footer-links">
+                        +31 06 123 456 78
+                    </a>
+                    <br>
+                    <a class="footer-links">
+                        info@horizontravels.nl
+                    </a>
+                    <br>
+                    <a class="footer-links">
+                        Algemene voorwaarden
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="../index.php" class="footer-links black">
+                    Home
+                    </a>
+                    <br>
+                    <a href="../over-ons" class="footer-links black">
+                    Over ons
+                    </a>
+                    <br>
+                    <a href="../contact" class="footer-links black">
+                    Contact
+                    </a>
+                    <br>
+                    <a href="../reizen" class="footer-links black">
+                    Reizen
+                    </a>
+                </div>
             </div>
-            <div class="vertical-footer-container">
+            <div class="footer-container row">
+                <p class="footer-text">Horizon Travels</p>
                 <p class="footer-text">Horizon Travels</p>
             </div>
         </div>
