@@ -11,7 +11,8 @@ body{
  
 header {
     display: flex;
-    height: 7vw;
+    height: fit-content;
+    padding-top: 1vw; padding-bottom: 1vw;
     width: 100%;
     background-color: #8EE3EF;
     align-items: center;
@@ -27,6 +28,10 @@ a{
     cursor: pointer;
 }
 
+.underline:hover{
+    text-decoration: underline;
+}
+
 .black{
     color: #000000;
 }
@@ -39,6 +44,12 @@ a{
 .column{
     display: flex;
     flex-direction: column;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
  
 .menu-bar {
@@ -163,4 +174,78 @@ tr:nth-child(even) {
 
 .over-ons-cont span{
     font-family: Arial, Helvetica, sans-serif;;
+}
+
+/* Login */
+
+.login-form{
+    background-color: #AEF3E7;
+    border-radius: 2vw;
+    width: 30vw;
+    height: fit-content;
+    margin: 5vw auto;
+    padding: 3vw;
+    gap: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
+
+.login-button{
+    width: 10vw;
+    padding: 1vw;
+    border-radius: 2vw;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    background-color: #37718ed3;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}.login-button:hover{
+    background-color: #37718E;
+    transition: all 0.3s ease-in;
+}
+
+.login-input{
+    width: 100%;
+    padding: 1vw;
+    border-radius: 2vw;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    cursor: text;
+}.login-input:hover{
+    outline: 0.2vw solid #37718E;
+}.login-input:focus{
+    outline: 0.2vw solid #37718E;
+}.login-input::placeholder{
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
+
+.login-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    color: #000000;
+}
+
+/* Register */
+
+.signup-forgot-link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    color: #000000;
+    padding: 1vw;
+    border-radius: 2vw;
+    background-color: #AEF3E7;
+    width: fit-content;
+}
+
+.signup-forgot-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 4.5vw;
+    margin-bottom: 5vw;
 }
