@@ -41,6 +41,12 @@ a{
     flex-direction: column;
 }
  
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .menu-bar {
     gap: 2vw;
     display: flex;
@@ -163,4 +169,19 @@ tr:nth-child(even) {
 
 .over-ons-cont span{
     font-family: Arial, Helvetica, sans-serif;;
+}
+
+/* Contact formulier */
+
+.form-cont{
+    margin: auto;
+}
+
+.formulier-box{
+    width: 30vw;
+    height: 3vw;
+    background-color: #FFFFFF;
+    border-color: #000000;
+    border: solid;
+    border-radius: 2vw;
 }
