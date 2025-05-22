@@ -4,6 +4,10 @@
     text-decoration: none;
     cursor: default;
 }
+
+body{
+    background-color: #254E70;
+}
  
 header {
     display: flex;
@@ -115,4 +119,42 @@ a{
 
 .footer-links:hover{
     text-decoration: underline;
+}
+
+/* over-ons */
+
+.over-ons-cont{
+    background-color: #FFFFFF;
+    border-radius: 2vw;
+    width: 50vw;
+    height: fit-content;
+    margin: 5vw auto;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.over-ons-cont h1{
+    font-family: Arial, Helvetica, sans-serif;;
+}
+
+.over-ons-cont span{
+    font-family: Arial, Helvetica, sans-serif;;
 }
