@@ -53,24 +53,29 @@
                         <th>Favoriete bestemming</th>
                     </tr>
                     <tr>
-                        <td>Emma de Vries</td>
-                        <td>Reisadviseur</td>
-                        <td>Thailand</td>
-                    </tr>
-                    <tr>
-                        <td>Lars Jansen</td>
-                        <td>Klantenservice</td>
-                        <td>Costa Rica</td>
-                    </tr>
-                    <tr>
-                        <td>Fatima El Amrani</td>
-                        <td>Marketing en Social media</td>
-                        <td>Marokko</td>
-                    </tr>
-                    <tr>
-                        <td>Tom van Dijk</td>
+                        <td>Bryan van Wissen</td>
                         <td>Oprichter</td>
-                        <td>Nieuw-Zeeland</td>
+                        <td>Noorwegen</td>
+                    </tr>
+                    <tr>
+                        <td>Sander Smits</td>
+                        <td>Oprichter</td>
+                        <td>Amerika</td>
+                    </tr>
+                    <tr>
+                        <td>Cas Wenting</td>
+                        <td>Reisadviseur</td>
+                        <td>Griekenland</td>
+                    </tr>
+                    <tr>
+                        <td>Niek de Heij</td>
+                        <td>Social media manager</td>
+                        <td>Zweden</td>
+                    </tr>
+                    <tr>
+                        <td>Max van de Peppel</td>
+                        <td>Marketing adviseur</td>
+                        <td>Portugal</td>
                     </tr>
                 </table>
             </span>
