@@ -10,10 +10,11 @@
 <body>
     <header>
         <div class="header-sides-cont">
-            <img src="../images/HorizonTravelsLogo.png" class="reisbureau-logo" alt="Reisbureau logo">
-            <a href="index.php" class="naam-doos">
-                <span class="naam-reisbureau">Horizon Travels</span>
+           
+            <a href="../index.php" class="naam-doos">
+                 <img src="../images/HorizonTravelsLogo.png" class="reisbureau-logo" alt="Reisbureau logo">
             </a>
+            <span class="naam-reisbureau">Horizon Travels</span>
         </div>
  
         <ul class="menu-bar">
@@ -39,9 +40,7 @@
         </ul>
  
         <div class="header-sides-cont">
-           <div class="login">
-                <a href="/login" class="black">Inloggen</a>
-            </div>
+            <a href="/login" class="black login">Inloggen</a>
         </div>
     </header>
 </body>
