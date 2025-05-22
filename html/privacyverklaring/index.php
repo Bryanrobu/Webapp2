@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../images/HorizonTravelsLogo.png" type="image/x-icon">  
-    <title>Contact</title>
+    <title>Algemene voorwaarden</title>
 </head>
 <body>
     <?php include_once ('../includes/header.php'); ?>
