@@ -98,6 +98,7 @@ a{
 .reisbureau-logo{
     width: 6vw;
     height: 6vw;
+    border-radius: 1vw;
 }
 
 .login{
