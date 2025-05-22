@@ -114,11 +114,17 @@ a{
     align-items: center;
     justify-content: center;
     width: 33vw;
-    gap: 2vw;
+    gap: 4vw;
 }
 
 .footer-links:hover{
     text-decoration: underline;
+}
+
+.footer-image{
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
 }
 
 /* over-ons */

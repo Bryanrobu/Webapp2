@@ -61,8 +61,8 @@
                 </div>
             </div>
             <div class="footer-container row">
-                <a><img src="../images/Facebook.png"></a>
-                <a><img src="../images/Instagram.png"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="../images/Facebook.png" alt="Foto van het logo van facebook" class="footer-image"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="../images/Instagram.png" alt="Foto van het logo van instagram" class="footer-image"></a>
             </div>
         </div>
     </footer>
