@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../images/HorizonTravelsLogo.png" type="image/x-icon">  
-    <title>Login</title>
+    <title>Sign up</title>
 </head>
 <body>
     <?php include_once ('../includes/header.php'); ?>
     <main>
         <form class="login-form center column" action="login_process.php" method="POST">
-            <h1 class="login-title">Inloggen</h1>
+            <h1 class="login-title">Registreren</h1>
             <label for="username" class="login-text">Gebruikersnaam:</label>
             <input type="text" id="username" name="username" class="login-input" placeholder="Gebruikersnaam" required>
             
@@ -22,7 +22,7 @@
         </form>
         <div class="signup-forgot-cont row">
             <div class="signup-forgot-link">
-                <p>Geen account? <a href="../signup" class="black underline">Registreer hier</a></p>
+                <p>Heb je al een account? <a href="../login" class="black underline">Log hier in</a></p>
             </div>
             <div class="signup-forgot-link">
                 <p>Wachtwoord vergeten? <a href="../forgot-password" class="black underline">Klik hier</a></p>
