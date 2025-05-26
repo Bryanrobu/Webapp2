@@ -314,7 +314,7 @@ tr:nth-child(even) {
 }
 
 .verzend-knop {
-    background-color: #8EE3EF;
+    background-color: #8ee4efbd;
     color: #000000;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5vw;
@@ -325,6 +325,11 @@ tr:nth-child(even) {
     border: none;
     margin-top: 1.5vw;
     cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.verzend-knop:hover{
+    background-color: #8EE3EF;
+    transition: all 0.3s ease-in;
 }
 
 .andere-mogelijkheden-cont{
