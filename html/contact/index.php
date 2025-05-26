@@ -19,9 +19,9 @@
 
         <div class="form-cont center row">
             <form class="formulier" action="https://formsubmit.co/1211888@student.roc-nijmegen.nl" method="POST">
-                <input type="text" class="formulier-input" name="naam" placeholder="Volledige naam:">
-                <input type="text" class="formulier-input" name="email" placeholder="E-mail:">
-                <input type="email" class="formulier-input" name="phone" placeholder="Telefoon nummer:">
+                <input type="text" class="formulier-input" name="naam" placeholder="Volledige naam:" required>
+                <input type="text" class="formulier-input" name="email" placeholder="E-mail:" required>
+                <input type="email" class="formulier-input" name="phone" placeholder="Telefoon nummer:" required>
                 <textarea class="formulier-input-lang" name="bericht" placeholder="Bericht/opmerking:"></textarea>
                 <button type="submit" class="verzend-knop">Verzend</button>
             </form>
