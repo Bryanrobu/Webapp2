@@ -16,19 +16,18 @@
             <button type="submit" class="verzend-knop">Zoeken</button>
         </form>
 
-        <div class="populaire-bestemmingen-cont center column">
-            <div class="populaire-bestemmingen-blokje">
-                
+        <div class="populaire-bestemmingen-cont center row">
+            <div class="homepage-bestemmingenc-cont center column">
+                <h1 class="homepage-bestemmingen-title">Populaire bestemmingen</h1>
+                <div class="populaire-bestemmingen-blokje">
+                </div>
             </div>
-            <div class="populaire-bestemmingen-blokje">
-                
+            <div class="homepage-bestemmingenc-cont center column">
+                <h1 class="homepage-bestemmingen-title">Last-minute bestemmingen</h1>
+                <div class="populaire-bestemmingen-blokje">
+                </div>
             </div>
-            <div class="populaire-bestemmingen-blokje">
-                
-            </div>
-            
         </div>
-
         <div class="welkom-text">
             
         </div>
