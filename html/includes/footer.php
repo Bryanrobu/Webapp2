@@ -45,7 +45,7 @@
                         Algemene voorwaarden
                     </a>
                 </div>
-                <div class="column">
+                <nav class="column">
                     <a href="../index.php" class="footer-links black">
                         Home
                     </a>
@@ -61,7 +61,7 @@
                     <a href="../reizen" class="footer-links black">
                         Reizen
                     </a>
-                </div>
+                </nav>
             </div>
             <div class="footer-container row">
                 <a href="https://www.facebook.com" target="_blank"><img src="../images/Facebook.png"
