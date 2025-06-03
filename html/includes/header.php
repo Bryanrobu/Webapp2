@@ -16,32 +16,23 @@
             </a>
             <span class="naam-reisbureau">Horizon Travels</span>
         </div>
- 
-        <ul class="menu-bar">
-            <li>
+            <nav class="menu-bar">
                 <a href="../index.php" class="menu-text">
                     Home
                 </a>
-            </li>
-            <li><a href="../over-ons" class="menu-text">
+                <a href="../over-ons" class="menu-text">
                     Over ons
                 </a>
-            </li>
-            <li>
                 <a href="../contact" class="menu-text">
                     Contact
                 </a>
-            </li>
-            <li>
                 <a href="../reizen" class="menu-text">
                     Reizen
                 </a>
-            </li>
-        </ul>
- 
-        <div class="header-sides-cont">
-            <a href="/login" class="black login">Inloggen</a>
-        </div>
+            </nav>
+            <div class="header-sides-cont">
+                <a href="/login" class="black login">Inloggen</a>
+            </div>
     </header>
 </body>
 </html>
