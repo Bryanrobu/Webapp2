@@ -18,7 +18,7 @@
             <label for="password" class="login-text">Wachtwoord:</label>
             <input type="password" id="password" name="password" class="login-input" placeholder="Wachtwoord" required>
             
-            <button type="submit" class="login-button">Login</button>
+            <button type="submit" class="login-button">Log in</button>
         </form>
         <div class="signup-forgot-cont row">
             <div class="signup-forgot-link">
