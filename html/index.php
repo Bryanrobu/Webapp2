@@ -68,5 +68,4 @@ $is_logged_in = isset($_SESSION["user"]);
     </main>
     <?php include_once('includes/footer.php'); ?>
 </body>
-
 </html>

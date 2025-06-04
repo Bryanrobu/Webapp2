@@ -30,6 +30,7 @@
                     Reizen
                 </a>
             </nav>
+
             <?php
             if (!$is_logged_in) { 
                 echo '<div class="header-sides-cont">
@@ -42,6 +43,10 @@
                 </div>';
             }
             ?>
+
+            <div class="header-sides-cont">
+                <a href="/login.php" class="black login">Inloggen</a>
+            </div>
 
     </header>
 </body>
