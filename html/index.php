@@ -18,7 +18,7 @@ $is_logged_in = isset($_SESSION["user"]);
     <?php include_once('includes/header.php'); ?>
 
     <main>
-        <form class="home-cont center column">
+        <form class="home-cont center column" action="process/reizen-zoeken.php" method="_GET">
             <input type="text" id="destination" name="destination" class="zoek-balk" placeholder="Bestemming zoeken">
             <button type="submit" class="verzend-knop">Zoeken</button>
         </form>

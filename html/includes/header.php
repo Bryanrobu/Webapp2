@@ -26,7 +26,7 @@
                 <a href="../contact.php" class="menu-text">
                     Contact
                 </a>
-                <a href="../reizen.php" class="menu-text">
+                <a href="../reizen.php?search=" class="menu-text">
                     Reizen
                 </a>
             </nav>
