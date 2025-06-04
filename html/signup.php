@@ -1,6 +1,9 @@
 <?php
 session_start();
 $is_logged_in = isset($_SESSION["user"]);
+if ($is_logged_in) {
+    header("location: ../account.php?id=" . $_SESSION["id"]);
+}
 ?>
 
 <!DOCTYPE html>
@@ -15,11 +18,14 @@ $is_logged_in = isset($_SESSION["user"]);
 <body>
     <?php include_once ('includes/header.php'); ?>
     <main>
-        <form class="login-form center column" action="login_process.php" method="POST">
+        <form class="login-form center column" action="process/signup-process.php" method="POST">
             <h1 class="login-title">Registreren</h1>
             <label for="username" class="login-text">Gebruikersnaam:</label>
             <input type="text" id="username" name="username" class="login-input" placeholder="Gebruikersnaam" required>
             
+            <label for="username" class="login-text">E-mail:</label>
+            <input type="text" id="email" name="email" class="login-input" placeholder="E-mail" required>
+
             <label for="password" class="login-text">Wachtwoord:</label>
             <input type="password" id="password" name="password" class="login-input" placeholder="Wachtwoord" required>
             
