@@ -517,3 +517,34 @@ tr:nth-child(even) {
     background-color: #37718E;
     transition: all 0.3s ease-in;
 }
+
+.reizen-blokje {
+    width: 30vw;
+    height: 15vw;
+    background-color: #FFFFFF;
+    border-radius: 2vw;
+    padding: 0.5vw;
+    margin: 1vw auto;
+    justify-content: space-evenly;
+}
+
+.reizen-headtxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    color: #000000;
+    text-align: center;
+}
+
+.reizen-subtxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    color: #000000;
+    text-align: center;
+}
+
+.reizen-txt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    color: #000000;
+    text-align: center;
+}

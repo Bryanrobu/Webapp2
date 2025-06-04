@@ -37,18 +37,19 @@ $zoekterm = isset($_GET['search']) ? $_GET['search'] : '';
     }
 
     $template = '
-    <div>
-        <div>
-            <h1>%s</h1>
-            <h2>%s</h2>
+    <div class="reizen-blokje center column">
+        <div class="reizen-blokje-header center column">
+            <h1 class="reizen-headtxt">%s</h1>
+            <h2 class="reizen-subtxt">%s</h2>
+            <h2 class="reizen-txt">%s</h2>
         </div>
-        <h2">%s</h2>
+        <a class="reizen-leesmeer" href="reizen-details.php?id=%s">Lees meer</a>
     </div>
     ';
     ?>
     <?php
         foreach ($result as $row) {
-            echo sprintf($template, $row["land"], $row["adress"], $row["omschrijving"]);
+            echo sprintf($template, $row["land"], $row["adress"], $row["omschrijving"], $row["id"]);
         }
         ?>
     <?php include_once ('includes/footer.php'); ?>
