@@ -1,8 +1,9 @@
 <?php
 
 session_start();
+$is_admin = $_SESSION["admin"] ?? false;
+$is_logged_in = isset($_SESSION["user"]);
 
-$is_logged_in = $_SESSION["admin"] ?? false;
 
 if (!$is_logged_in) {
     die("You dont have permission to view this page");
@@ -15,7 +16,7 @@ if (!$is_logged_in) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>admin</title>
+    <title>Admin</title>
 </head>
 <body>
     <?php include_once ('../includes/header.php'); ?>
