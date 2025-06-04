@@ -36,14 +36,17 @@
     <?php include_once ('includes/header.php'); ?>
     
     <main>
-        <h1>Account van <?php echo htmlspecialchars($username); ?></h1>
-        <p>Email: <?php echo htmlspecialchars($email); ?></p>
-        
-        <?php if ($_SESSION["admin"] == true): ?>
-            <p><a href="/admin/admin.php">Admin pagina</a></p>
-        <?php endif; ?>
-        
-        <p><a href="process/logout-process.php">Uitloggen</a></p>
+        <div class="account-info-container column center">
+            <h1 class="account-headtxt">Account van <?php echo htmlspecialchars($username); ?></h1>
+            <p class="account-subtxt">Email: <?php echo htmlspecialchars($email); ?></p>
+            <div class="account-button-container row">
+                <?php if ($_SESSION["admin"] == true): ?>
+                    <a href="/admin/admin.php"><p class="account-button pointer">Admin pagina</p></a>
+                <?php endif; ?>
+            
+                <a href="process/logout-process.php"><p class="account-button pointer">Uitloggen</p></a>
+            </div>
+        </div>
     </main>
     
     <?php include_once ('includes/footer.php'); ?>
