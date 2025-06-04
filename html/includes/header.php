@@ -36,18 +36,12 @@
                 echo '<div class="header-sides-cont">
                     <a href="/login.php" class="black login">Inloggen</a>
                 </div>';
-            }
-            else {
+            } else {
                 echo '<div class="header-sides-cont">
                 <a href="/account.php?id=' . $_SESSION["id"] . '" class="black login">Account</a>
                 </div>';
             }
             ?>
-
-            <div class="header-sides-cont">
-                <a href="/login.php" class="black login">Inloggen</a>
-            </div>
-
     </header>
 </body>
 </html>
