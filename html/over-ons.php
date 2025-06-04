@@ -1,11 +1,8 @@
-<<<<<<< Updated upstream
-=======
 <?php
 session_start();
 $is_logged_in = isset($_SESSION["user"]);
 ?>
 
->>>>>>> Stashed changes
 <!DOCTYPE html>
 <html lang="en">
 

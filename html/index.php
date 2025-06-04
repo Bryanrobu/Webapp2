@@ -1,13 +1,8 @@
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-=======
 <?php
 session_start();
 $is_logged_in = isset($_SESSION["user"]);
 ?>
 
->>>>>>> Stashed changes
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,10 +68,4 @@ $is_logged_in = isset($_SESSION["user"]);
     </main>
     <?php include_once('includes/footer.php'); ?>
 </body>
-
-<<<<<<< Updated upstream
 </html>
-=======
-</html>
->>>>>>> Stashed changes
->>>>>>> Stashed changes
