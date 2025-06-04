@@ -41,7 +41,7 @@
                         info@horizontravels.nl
                     </a>
                     <br>
-                    <a class="footer-links black" href="../privacyverklaring">
+                    <a class="footer-links black" href="../privacyverklaring.php">
                         Algemene voorwaarden
                     </a>
                 </div>
@@ -50,15 +50,15 @@
                         Home
                     </a>
                     <br>
-                    <a href="../over-ons" class="footer-links black">
+                    <a href="../over-ons.php" class="footer-links black">
                         Over ons
                     </a>
                     <br>
-                    <a href="../contact" class="footer-links black">
+                    <a href="../contact.php" class="footer-links black">
                         Contact
                     </a>
                     <br>
-                    <a href="../reizen" class="footer-links black">
+                    <a href="../reizen.php" class="footer-links black">
                         Reizen
                     </a>
                 </nav>

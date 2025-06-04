@@ -20,18 +20,18 @@
                 <a href="../index.php" class="menu-text">
                     Home
                 </a>
-                <a href="../over-ons" class="menu-text">
+                <a href="../over-ons.php" class="menu-text">
                     Over ons
                 </a>
-                <a href="../contact" class="menu-text">
+                <a href="../contact.php" class="menu-text">
                     Contact
                 </a>
-                <a href="../reizen" class="menu-text">
+                <a href="../reizen.php" class="menu-text">
                     Reizen
                 </a>
             </nav>
             <div class="header-sides-cont">
-                <a href="/login" class="black login">Inloggen</a>
+                <a href="/login.php" class="black login">Inloggen</a>
             </div>
     </header>
 </body>

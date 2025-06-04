@@ -8,7 +8,7 @@
     <title>Sign up</title>
 </head>
 <body>
-    <?php include_once ('../includes/header.php'); ?>
+    <?php include_once ('includes/header.php'); ?>
     <main>
         <form class="login-form center column" action="login_process.php" method="POST">
             <h1 class="login-title">Registreren</h1>
@@ -22,13 +22,13 @@
         </form>
         <div class="signup-forgot-cont row">
             <div class="signup-forgot-link">
-                <p>Heb je al een account? <a href="../login" class="black underline">Log hier in</a></p>
+                <p>Heb je al een account? <a href="../login.php" class="black underline">Log hier in</a></p>
             </div>
             <div class="signup-forgot-link">
-                <p>Wachtwoord vergeten? <a href="../forgot-password" class="black underline">Klik hier</a></p>
+                <p>Wachtwoord vergeten? <a href="../forgot-password.php" class="black underline">Klik hier</a></p>
             </div>
         </div>
     </main>
-    <?php include_once ('../includes/footer.php'); ?>
+    <?php include_once ('includes/footer.php'); ?>
 </body>
 </html>

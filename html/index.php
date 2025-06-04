@@ -53,7 +53,7 @@
                     zorgeloze ervaring, van het moment van boeken tot je terugkomst thuis.</h1>
 
                 <h1>Boek vandaag nog en maak herinneringen voor het leven!</h1>
-                <a href="../reizen" class="boek-nu">
+                <a href="reizen.php" class="boek-nu">
                     <h1 class="pointer">Boek nu <img src="../images/arrow-right.png"
                         alt="Een pijltje naar rechts" class="pijltje pointer"></h1> 
                 </a>
