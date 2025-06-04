@@ -5,7 +5,7 @@ $is_admin = $_SESSION["admin"] ?? false;
 $is_logged_in = isset($_SESSION["user"]);
 
 
-if (!$is_logged_in) {
+if (!$is_admin) {
     die("You dont have permission to view this page");
 }
 
@@ -20,6 +20,6 @@ if (!$is_logged_in) {
 </head>
 <body>
     <?php include_once ('../includes/header.php'); ?>
-    
+    <?php include_once ('../includes/footer.php'); ?>
 </body>
 </html>
