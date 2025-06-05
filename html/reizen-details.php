@@ -18,9 +18,9 @@ $is_logged_in = isset($_SESSION["user"]);
     <?php include_once('includes/header.php'); ?>
     <main>
         <div class="details-cont center column">
-            <div class="plaatje-details">
-
-            </div>
+            <img src="../images/VakantiePlaatje.jpg"
+                        alt="Foto van een vakantie" class="plaatje-details">
+                
             <div class="details-beschrijving-cont center">
                 <div class="details-beschrijving">
 
