@@ -519,13 +519,21 @@ tr:nth-child(even) {
 }
 
 .reizen-blokje {
-    width: 30vw;
-    height: 15vw;
+    width: 35vw;
+    height: 17.5vw;
     background-color: #FFFFFF;
     border-radius: 2vw;
     padding: 0.5vw;
-    margin: 1vw auto;
+    margin: 4vw auto;
     justify-content: space-evenly;
+}
+
+.reizen-cont {
+    height: 15vw;
+    width: 81vw;
+    background-color: #37718E;
+    border-radius: 2vw;
+    margin: 3vw auto 0vw;
 }
 
 .reizen-headtxt {
@@ -547,4 +555,25 @@ tr:nth-child(even) {
     font-size: 1vw;
     color: #000000;
     text-align: center;
+}
+
+.reizen-leesmeer {
+    width: 5vw;
+    padding: 1vw;
+    border-radius: 2vw;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    background-color: #37718ed3;
+    transition: all 0.3s ease-out;
+    text-align: center;
+}.reizen-leesmeer:hover{
+    background-color: #37718E;
+    transition: all 0.3s ease-in;
+}
+
+.reizen-spacer-container {
+    width: 90vw;
+    margin: auto;
+    flex-wrap: wrap;
 }

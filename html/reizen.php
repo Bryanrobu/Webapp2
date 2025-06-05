@@ -40,18 +40,24 @@ $zoekterm = isset($_GET['search']) ? $_GET['search'] : '';
     <div class="reizen-blokje center column">
         <div class="reizen-blokje-header center column">
             <h1 class="reizen-headtxt">%s</h1>
-            <h2 class="reizen-subtxt">%s</h2>
+            <h2 class="reizen-subtxt">%s</h2><br>
             <h2 class="reizen-txt">%s</h2>
         </div>
         <a class="reizen-leesmeer" href="reizen-details.php?id=%s">Lees meer</a>
     </div>
     ';
     ?>
+    <form class="reizen-cont center column" action="process/reizen-zoeken.php" method="_GET">
+        <input type="text" id="destination" name="destination" class="zoek-balk" placeholder="Bestemming zoeken">
+        <button type="submit" class="verzend-knop">Zoeken</button>
+    </form>
+    <section class="reizen-spacer-container center row">
     <?php
         foreach ($result as $row) {
             echo sprintf($template, $row["land"], $row["adress"], $row["omschrijving"], $row["id"]);
         }
-        ?>
+    ?>
+    </section
     <?php include_once ('includes/footer.php'); ?>
 </body>
 </html>
