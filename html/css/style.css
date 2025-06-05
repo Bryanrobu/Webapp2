@@ -1,0 +1,579 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    cursor: default;
+}
+
+body{
+    background-color: #254E70;
+}
+ 
+header {
+    display: flex;
+    height: fit-content;
+    padding-top: 1vw; padding-bottom: 1vw;
+    width: 100%;
+    background-color: #8EE3EF;
+    align-items: center;
+    justify-content: center;
+    gap: 8vw;
+}
+ 
+li{
+    list-style-type: none;
+}
+
+a{
+    cursor: pointer;
+    color: #000000;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.underline:hover{
+    text-decoration: underline;
+}
+
+.black{
+    color: #000000;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-bar {
+    gap: 2vw;
+    display: flex;
+    height: 2vw;
+    width: fit-content;
+    background-color: #8EE3EF;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.header-sides-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    width: 24vw;
+}
+ 
+.menu-text {
+    color: #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8vw;
+    border-bottom: #f26430 solid 0.3vw;
+    transition: all 0.1s ease-out;
+}.menu-text:hover{
+    border-bottom: #f26430 solid 0.5vw;
+    transition: all 0.1s ease-in;
+}
+ 
+.naam-reisbureau{
+    color: #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+}
+ 
+.reisbureau-logo{
+    width: 6vw;
+    height: 6vw;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    border-radius: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    background-color: #f26430;
+    transition: all 0.3s ease-out;
+}.login:hover{
+    padding: 1.2vw;
+    transition: all 0.3s ease-in;
+}
+
+.footer{
+    display: flex;
+    height: fit-content;
+    padding-top: 1vw; padding-bottom: 1vw;
+    width: 100%;
+    background-color: #8EE3EF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container{
+    align-items: center;
+    justify-content: center;
+    width: 33vw;
+    gap: 4vw;
+}
+
+.footer-links:hover{
+    text-decoration: underline;
+}
+
+.footer-image{
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}.footer-image:hover{
+    transform: scale(1.1);
+    rotate: -10deg;
+    transition: all 0.3s ease-in;
+}
+
+/* over-ons */
+
+.over-ons-cont{
+    background-color: #FFFFFF;
+    border-radius: 2vw;
+    width: 50vw;
+    height: fit-content;
+    margin: 5vw auto;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 0.1vw solid #dddddd;
+  text-align: left;
+  padding: 0.8vw;
+  font-size: 1.1vw;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.over-ons-cont h1{
+    font-family: Arial, Helvetica, sans-serif;;
+    font-size: 2vw;
+}
+
+.over-ons-cont span{
+    font-family: Arial, Helvetica, sans-serif;;
+    font-size: 1.1vw;
+}
+
+/* Login */
+
+.login-form{
+    background-color: #AEF3E7;
+    border-radius: 2vw;
+    width: 30vw;
+    height: fit-content;
+    margin: 5vw auto;
+    padding: 3vw;
+    gap: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
+
+.login-button{
+    width: 10vw;
+    padding: 1vw;
+    border-radius: 2vw;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    background-color: #37718ed3;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}.login-button:hover{
+    background-color: #37718E;
+    transition: all 0.3s ease-in;
+}
+
+.login-input{
+    width: 100%;
+    padding: 1vw;
+    border-radius: 2vw;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    cursor: text;
+}.login-input:hover{
+    outline: 0.2vw solid #37718E;
+}.login-input:focus{
+    outline: 0.2vw solid #37718E;
+}.login-input::placeholder{
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
+
+.login-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    color: #000000;
+}
+
+.login-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8vw;
+    color: #000000;
+    text-align: center;
+}
+
+/* Register */
+
+.signup-forgot-link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    color: #000000;
+    padding: 1vw;
+    border-radius: 2vw;
+    background-color: #AEF3E7;
+    width: fit-content;
+}
+
+.signup-forgot-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 4.5vw;
+    margin-bottom: 5vw;
+}
+
+/* Contact pagina */
+
+.form-cont{
+    margin: 5vw auto;
+}
+
+.formulier {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.formulier-input {
+    background-color: #FFFFFF;
+    border: solid;
+    border-color: #000000;
+    border-width: 0.3vw;
+    border-radius: 2vw;
+    padding: 1.5vw;
+    width: 50vw;
+    height: 0.7vw;
+    font-size: 1vw;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: text;
+    outline: none;
+}
+
+.formulier-input-lang {
+    background-color: #FFFFFF;
+    border: solid;
+    border-color: #000000;
+    border-width: 0.3vw;
+    border-radius: 2vw;
+    padding: 1.5vw;
+    width: 50vw;
+    height: 15vw;
+    font-size: 1vw;
+    color: #000000;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: text;
+    outline: none;
+}
+
+.verzend-knop {
+    background-color: #8ee4efbd;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    width: 10vw;
+    align-self: center;
+    padding: 1.1vw;
+    border-radius: 1.4vw;
+    border: none;
+    margin-top: 1.5vw;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.verzend-knop:hover{
+    background-color: #8EE3EF;
+    transition: all 0.3s ease-in;
+}
+
+.andere-mogelijkheden-cont{
+    width: 50vw;
+    height: 20vw;
+    background-color: #FFFFFF;
+    border: solid;
+    border-color: #000000;
+    border-width: 0.3vw;
+    border-radius: 2vw;
+    margin: 5vw auto;
+}
+
+.andere-mogelijkheden-cont h1{
+    color: #254E70;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2vw;
+}
+
+.andere-mogelijkheden-cont span{
+    font-size: 1.4vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titel-contact{
+    margin: 3vw auto;
+}
+
+.titel-contact h1{
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Privacyverklaring */
+.privacyverklaring{
+    width: 50vw;
+    margin: 5vw auto;
+    padding: 1vw;
+    border-radius: 1vw;
+    height: fit-content;
+    background-color: #AEF3E7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
+
+.titel-privacyverklaring{
+    font-size: 1.3vw;
+    margin: 3vw auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Home pagina */
+
+.home-cont{
+    width: 100%;
+    height: 30vw;
+    background-color: #37718E;
+}
+
+.zoek-balk{
+    background-color: #FFFFFF;
+    border: solid;
+    border-color: #000000;
+    border-width: 0.3vw;
+    border-radius: 2vw;
+    padding: 1.4vw;
+    width: 25vw;
+    height: 0.7vw;
+    font-size: 1vw;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: text;
+    outline: none;
+}
+
+.populaire-bestemmingen-cont{
+    width: 100%;
+    height: fit-content;
+    background-color: #254E70;
+    gap: 3vw;
+}
+
+.populaire-bestemmingen-blokje{
+    width: 25vw;
+    height: 15vw;
+    margin: 2vw;
+    background-color: #FFFFFF;
+}
+
+.homepage-bestemmingenc-cont {
+    margin: 5vw auto;
+}
+
+.homepage-bestemmingen-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+.home-page-welkom-cont{
+    width: 100%;
+    height: fit-content;
+    margin: 8vw auto;
+}
+
+.welkom-text{
+    width: 60vw;
+    height: fit-content;
+    background-color: #AEF3E7;
+    border-radius: 2vw;
+    padding: 1vw;
+    text-align: center;
+}
+
+.welkom-text h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+    padding: 1vw;
+}
+
+.boek-nu{
+    height: fit-content;
+
+}
+
+.boek-nu h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6vw;
+}
+
+.pijltje{
+    height: 1vw;
+    width: 1vw;
+}
+
+.account-headtxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    color: #000000;
+}
+
+.account-subtxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    color: #000000;
+}
+
+.account-info-container {
+    width: 30vw;
+    height: fit-content;
+    background-color: #AEF3E7;
+    border-radius: 2vw;
+    padding: 2vw;
+    gap: 1vw;
+    margin: 5vw auto;
+}
+
+.account-button-container {
+    gap: 1vw;
+}
+
+.account-button {
+    width: 10vw;
+    padding: 1vw;
+    border-radius: 2vw;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    background-color: #37718ed3;
+    transition: all 0.3s ease-out;
+    text-align: center;
+}.account-button:hover{
+    background-color: #37718E;
+    transition: all 0.3s ease-in;
+}
+
+.reizen-blokje {
+    width: 35vw;
+    height: 17.5vw;
+    background-color: #FFFFFF;
+    border-radius: 2vw;
+    padding: 0.5vw;
+    margin: 4vw auto;
+    justify-content: space-evenly;
+}
+
+.reizen-cont {
+    height: 15vw;
+    width: 81vw;
+    background-color: #37718E;
+    border-radius: 2vw;
+    margin: 3vw auto 0vw;
+}
+
+.reizen-headtxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    color: #000000;
+    text-align: center;
+}
+
+.reizen-subtxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    color: #000000;
+    text-align: center;
+}
+
+.reizen-txt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    color: #000000;
+    text-align: center;
+}
+
+.reizen-leesmeer {
+    width: 5vw;
+    padding: 1vw;
+    border-radius: 2vw;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    background-color: #37718ed3;
+    transition: all 0.3s ease-out;
+    text-align: center;
+}.reizen-leesmeer:hover{
+    background-color: #37718E;
+    transition: all 0.3s ease-in;
+}
+
+.reizen-spacer-container {
+    width: 90vw;
+    margin: auto;
+    flex-wrap: wrap;
+}
