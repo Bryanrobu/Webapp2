@@ -86,6 +86,7 @@ a {
     color: #000000;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
     font-size: 1.8vw;
     border-bottom: #f26430 solid 0.3vw;
     transition: all 0.1s ease-out;
@@ -301,6 +302,7 @@ tr:nth-child(even) {
 
 .form-cont {
     margin: 5vw auto;
+    gap: 2vw;
 }
 
 .formulier {
@@ -340,6 +342,24 @@ tr:nth-child(even) {
     font-family: Arial, Helvetica, sans-serif;
     cursor: text;
     outline: none;
+}
+
+.formulier-input-medium {
+    background-color: #FFFFFF;
+    border: solid;
+    border-color: #000000;
+    border-width: 0.3vw;
+    border-radius: 2vw;
+    padding: 1.5vw;
+    width: 50vw;
+    height: 7.5vw;
+    font-size: 1vw;
+    color: #000000;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: text;
+    outline: none;
+
 }
 
 .verzend-knop {
@@ -605,7 +625,6 @@ tr:nth-child(even) {
     flex-wrap: wrap;
 }
 
-
 /* reizen-details pagina */
 
 .details-cont {
@@ -632,6 +651,7 @@ tr:nth-child(even) {
     width: 75vw;
     height: fit-content;
     background-color: #FFF;
+    
 }
 
 .faciliteiten{
@@ -781,4 +801,24 @@ tr:nth-child(even) {
     font-family: Arial, Helvetica, sans-serif;
     margin: 3vw auto;
     gap: 3vw;
+}
+.admin-headtxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    color: #000000;
+    text-align: center;
+}
+
+.admin-subtxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.75vw;
+    color: #000000;
+    text-align: center;
+}
+
+.admin-bg {
+    background-color: #37718E;
+    border-radius: 2vw;
+    width: fit-content;
+    padding: 2vw;
 }

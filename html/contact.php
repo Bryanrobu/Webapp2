@@ -30,7 +30,6 @@ $is_logged_in = isset($_SESSION["user"]);
                 <textarea class="formulier-input-lang" name="bericht" placeholder="Bericht/opmerking:"></textarea>
                 <button type="submit" class="verzend-knop">Verzend</button>
             </form>
-
         </div>
 
         <div class="andere-mogelijkheden-cont center column">
