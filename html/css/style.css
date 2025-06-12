@@ -783,6 +783,7 @@ tr:nth-child(even) {
     background-color: #254E70;
     margin: 5vw auto;
     font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
 }
 
 .reviews{
@@ -793,6 +794,12 @@ tr:nth-child(even) {
     font-family: Arial, Helvetica, sans-serif;
     padding: 1vw;
     border-radius: 1vw;
+}
+
+.reviews-titel{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    margin-top: 5vw;
 }
 
 .algemene-info-hotel{
@@ -822,3 +829,4 @@ tr:nth-child(even) {
     width: fit-content;
     padding: 2vw;
 }
+

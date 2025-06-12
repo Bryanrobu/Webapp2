@@ -73,17 +73,36 @@ $is_logged_in = isset($_SESSION["user"]);
                     </div>
                 </div>
             </div>
-            <div class="reviews-cont center column">
+            <div class="reviews-titel">
                 <h1>Reviews</h1>
-                <div class="reviews">
-                    <h1>Bart Jansen</h1> <br>
-                    Ik heb een heerlijke vakantie gehad op Mallorca! Het eiland is echt prachtig. We hebben genoten van
-                    de zon, de mooie stranden en de gezellige sfeer in de dorpjes. Palma was levendig en sfeervol, met
-                    leuke restaurants en mooie bezienswaardigheden zoals de kathedraal. Een hoogtepunt was zeker de
-                    wandeling in de Serra de Tramuntana; het uitzicht was adembenemend. Ook het eten was top, vooral de
-                    tapas en
-                    verse vis. Ik kom zeker nog eens terug!
-                </div>
+            </div>
+
+            <div class="reviews-cont center row">
+
+
+                <?php
+
+                require_once 'process/db.php';
+                $db = new db();
+                $pdo = $db->get_connection();
+
+
+                $template = '<div class="reviews"> <h1> %s </h1> <br> %s </div>';
+
+                $stmt = $pdo->prepare("SELECT * FROM recensies WHERE reis_id=:reis_id");
+                $stmt->execute(["reis_id" => $_GET["id"]]);
+                $rows = $stmt->fetchAll();
+
+                foreach ($rows as $row) {
+
+                    $stmt = $pdo->prepare("SELECT * FROM users WHERE id=:id");
+                    $stmt->execute(["id" => $row["user_id"]]);
+                    $user = $stmt->fetch();
+
+                    echo sprintf($template, $user["username"], $row["content"]);
+                }
+
+                ?>
             </div>
 
             <div class="titel-contact center">
@@ -92,8 +111,11 @@ $is_logged_in = isset($_SESSION["user"]);
 
             <div class="form-cont center row">
                 <form class="formulier" action="process/post-review.php" method="POST">
-                    <input type="number" class="formulier-input" name="score" max="5" min="1" placeholder="Score (1-5)">
-                    <textarea class="formulier-input-lang" name="content" placeholder="Bericht/opmerking:"></textarea>
+                    <input name="travel_id" type="hidden" value="<?php echo $_GET["id"] ?>">
+                    <input required type="number" class="formulier-input" name="score" max="5" min="1"
+                        placeholder="Score (1-5)">
+                    <textarea required class="formulier-input-lang" name="content"
+                        placeholder="Bericht/opmerking:"></textarea>
                     <button type="submit" class="verzend-knop">Verzend</button>
                 </form>
             </div>
