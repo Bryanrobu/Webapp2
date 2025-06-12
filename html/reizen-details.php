@@ -43,8 +43,10 @@ $is_logged_in = isset($_SESSION["user"]);
                                 - Gratis wifi in openbare ruimte <br>
                                 - Gratis wifi op de kamer<br>
                                 - Receptie (24 uur)<br>
-                                - Bagageruimte<br><br>
+                                - Bagageruimte<br>
+                                - Zwembad <br> <br>
                                 Tegen betaling<br>
+                                - Restaurant<br>
                                 - Winkeltje(s)<br>
                                 - Wasservice<br>
                             </div>
@@ -58,25 +60,6 @@ $is_logged_in = isset($_SESSION["user"]);
                                 - RiuArt atelier<br>
                             </div>
 
-                        </div>
-                        <div class="cont-faciliteiten-activiteiten center row">
-                            <div class="restaurants column center">
-                                <h1>Restaurants</h1> <br>
-                                - 4 buffetrestaurants: Da Marcello (Italiaans), Kabuki (Aziatisch), Bereber (grill) en
-                                Santo
-                                Antao <br>
-                                - 2 à-la-carterestaurants: Kulinarium (alleen voor Adults Only gasten) (Internationaal)
-                                en
-                                Boavista (Kaapverdisch) <br>
-                                - 7 bars
-                            </div>
-                            <div class="zwembaden column center">
-                                <h1>Zwembaden</h1> <br>
-                                - 6 buitenbaden <br>
-                                - 2 kinderbaden buiten <br>
-                                - Badhanddoeken, ligbedden en parasols <br>
-                                - Zonneterras
-                            </div>
                         </div>
                     </div>
 
@@ -95,15 +78,24 @@ $is_logged_in = isset($_SESSION["user"]);
                 <div class="reviews">
                     <h1>Bart Jansen</h1> <br>
                     Ik heb een heerlijke vakantie gehad op Mallorca! Het eiland is echt prachtig. We hebben genoten van
-                    de
-                    zon, de mooie stranden en de gezellige sfeer in de dorpjes. Palma was levendig en sfeervol, met
-                    leuke
-                    restaurants en mooie bezienswaardigheden zoals de kathedraal. Een hoogtepunt was zeker de wandeling
-                    in
-                    de Serra de Tramuntana; het uitzicht was adembenemend. Ook het eten was top, vooral de tapas en
-                    verse
-                    vis. Ik kom zeker nog eens terug!
+                    de zon, de mooie stranden en de gezellige sfeer in de dorpjes. Palma was levendig en sfeervol, met
+                    leuke restaurants en mooie bezienswaardigheden zoals de kathedraal. Een hoogtepunt was zeker de
+                    wandeling in de Serra de Tramuntana; het uitzicht was adembenemend. Ook het eten was top, vooral de
+                    tapas en
+                    verse vis. Ik kom zeker nog eens terug!
                 </div>
+            </div>
+
+            <div class="titel-contact center">
+                <h1>Recenseer dit item</h1>
+            </div>
+
+            <div class="form-cont center row">
+                <form class="formulier" action="process/post-review.php" method="POST">
+                    <input type="number" class="formulier-input" name="score" max="5" min="1" placeholder="Score (1-5)">
+                    <textarea class="formulier-input-lang" name="content" placeholder="Bericht/opmerking:"></textarea>
+                    <button type="submit" class="verzend-knop">Verzend</button>
+                </form>
             </div>
         </div>
     </main>
