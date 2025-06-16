@@ -643,7 +643,7 @@ tr:nth-child(even) {
 
 .details-beschrijving {
     width: 70vw;
-    height: 40vw;
+    height: fit-content;
     background-color: #8EE3EF;
     border-radius: 1vw;
     margin-top: -15vw;
@@ -651,6 +651,165 @@ tr:nth-child(even) {
 
 .details-beschrijving-cont {
     width: 75vw;
+    height: fit-content;
+    background-color: #FFF;
+    
+}
+
+.faciliteiten{
+    width: 17vw;
+    height: fit-content;
+    background-color: #8EE3EF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+
+.faciliteiten h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+}
+
+.activiteiten{
+    width: 17vw;
+    height: fit-content;
+    background-color: #8EE3EF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+
+.activiteiten h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+}
+
+.restaurants{
+    width: 17vw;
+    height: fit-content;
+    background-color: #8EE3EF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+
+.restaurants h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+}
+
+.zwembaden{
+    width: 17vw;
+    height: fit-content;
+    background-color: #8EE3EF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+
+.zwembaden h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+}
+.land{
+    width: fit-content;
+    height: fit-content;
+    background-color: #8EE3EF;
+    margin: 1vw auto;
+}
+
+.land h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+}
+
+.land h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.1vw;
+}
+
+.lange-beschrijving-land{
+    width: 50vw;
+    height: fit-content;
+    background-color: #37718E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+    padding: 1vw;
+    margin: 2vw auto;
+    border-radius: 1.2vw;
+}
+
+.label-date{
+    width: fit-content;
+}
+
+.datum-vertrek{
+    width: fit-content;
+    height: fit-content;
+    background-color: #37718E;
+    margin: 3vw auto;
+    padding: 1vw;
+    border-radius: 2vw;
+}
+
+.datum-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+}
+
+.boek-nu-knop {
+    background-color: #8ee4efbd;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    width: 4vwvw;
+    align-self: center;
+    padding: 0.6vw;
+    border-radius: 0.9vw;
+    border: none;
+    margin-top: 1.5vw;
+    cursor: pointer;
+}
+
+.cont-faciliteiten-datum{
+    gap: 10vw;
+}
+
+.reviews-cont{
+    width: 80vw;
+    height: fit-content;
+    background-color: #254E70;
+    margin: 5vw auto;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+}
+
+.reviews{
+    width: 25vw;
+    height: 15vw;
+    margin: 2vw;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1vw;
+    border-radius: 1vw;
+}
+
+.reviews-titel{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    margin-top: 5vw;
+}
+
+.algemene-info-hotel{
+    width: fit-content;
+    height: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3vw auto;
+    gap: 3vw;
     height: 30vw;
     background-color: #ffffff;
 }
