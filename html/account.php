@@ -64,7 +64,7 @@
         <h2 class="center">Mijn geboekte reizen</h2>
         <div class="reizen-lijst">
             <?php if (empty($geboekte_reizen)): ?>
-                <p>Je hebt nog geen reizen geboekt.</p>
+                <p class="center">Je hebt nog geen reizen geboekt.</p>
             <?php else: ?>
                 <?php foreach ($geboekte_reizen as $reis): ?>
                     <div class="reis-card row center">

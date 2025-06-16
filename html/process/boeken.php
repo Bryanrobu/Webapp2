@@ -23,12 +23,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $reis) {
             'user_id' => $user,
             'reis_id' => $reis
         ]);
-        echo "Boeking toegevoegd! <br>";
+        header("Location: /account.php?id=" . $user);
     } else {
-        echo "Je hebt deze reis al geboekt. <br>";
+        header("Location: /reizen-details.php?id=" . $reis . "&error=already_booked");
     }
+    
 }
-
-echo "Reis ID: " . htmlspecialchars($reis) . "<br>";
-echo "Gebruiker ID: " . htmlspecialchars($user);
-?>
