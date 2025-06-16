@@ -8,7 +8,6 @@ $is_logged_in = isset($_SESSION["user"]);
 if (!$is_admin) {
     die("You dont have permission to view this page");
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -38,12 +37,13 @@ if (!$is_admin) {
 
         <form class="formulier" action="../process/bewerk-reis.php" method="POST">
                 <input type="text" class="formulier-input" name="land" placeholder="Land:" required value="<?php echo ($reis['land']); ?>">
-                <input type="text" class="formulier-input" name="adress" placeholder="adres:" required value="<?php echo ($reis['adress']); ?>">
+                <input type="text" class="formulier-input" name="adress" placeholder="adress:" required value="<?php echo ($reis['adress']); ?>">
                 <textarea class="formulier-input-medium" name="omschrijving" placeholder="Korte omschrijving:" required><?php echo ($reis['omschrijving']); ?></textarea>
                 <textarea class="formulier-input-lang" name="beschrijving" placeholder="Lange beschrijving:" required><?php echo ($reis['beschrijving']); ?></textarea>
                 <textarea class="formulier-input-lang" name="faciliteiten" placeholder="Faciliteiten (gescheiden door <br>):" required><?php echo ($reis['faciliteiten']); ?></textarea>
                 <textarea class="formulier-input-lang" name="activiteiten" placeholder="Activiteiten (gescheiden door <br>):" required><?php echo ($reis['activiteiten']); ?></textarea>
-                <button type="submit" class="verzend-knop">Verzend</button>
+                <input type="hidden" name="reis_id" value="<?php echo $reis['id']; ?>">
+                <button type="submit" class="verzend-knop">Aanpassen</button>
             </form>
     </div>
     <?php include_once ('../includes/footer.php'); ?>

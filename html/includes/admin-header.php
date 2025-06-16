@@ -24,7 +24,7 @@
                     Admin
                 </a>
                 <a href="../admin/geboekt.php" class="menu-text center">
-                    Geboekt
+                    Admin-reizen
                 </a>
             </nav>
 
