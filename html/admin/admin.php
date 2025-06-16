@@ -27,7 +27,7 @@ if (!$is_admin) {
         <h1 class="admin-subtxt">Reizen toevoegen</h1>
             <form class="formulier" action="../process/reis-toevoegen.php" method="POST">
                 <input type="text" class="formulier-input" name="land" placeholder="Land:" required>
-                <input type="text" class="formulier-input" name="adress" placeholder="adres:" required>
+                <input type="text" class="formulier-input" name="adress" placeholder="adress:" required>
                 <textarea class="formulier-input-medium" name="omschrijving" placeholder="Korte omschrijving:" required></textarea>
                 <textarea class="formulier-input-lang" name="beschrijving" placeholder="Lange beschrijving:" required></textarea>
                 <textarea class="formulier-input-lang" name="faciliteiten" placeholder="Faciliteiten (gescheiden door <br>):" required></textarea>
