@@ -757,6 +757,7 @@ tr:nth-child(even) {
     border: none;
     cursor: pointer;
     margin-bottom: 5vw;
+    width: fit-content;
 }
 
 .reviews-cont{
