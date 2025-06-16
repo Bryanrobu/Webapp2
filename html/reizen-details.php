@@ -60,13 +60,13 @@ $is_logged_in = isset($_SESSION["user"]);
                     </div>
 
 
-                    <div class="datum-vertrek center column">
+                    <form class="datum-vertrek center column" method="post" action="process/boeken.php">
                         <label for="datum" class="datum-text">Kies een datum van vertrek:</label>
-                        <input type="date" id="datum" class="label-date">
+                        <input type="date" id="datum-vertrek" name="datum-vertrek" class="label-date" required>
                         <label for="datum" class="datum-text">Kies een datum van terugkomst:</label>
-                        <input type="date" id="datum" class="label-date">
+                        <input type="date" id="datum-terugkomst" name="datum-terugkomst" class="label-date" required>
                         <button type="submit" class="boek-nu-knop">Boek nu</button>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div class="reviews-titel">
