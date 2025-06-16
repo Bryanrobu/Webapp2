@@ -21,6 +21,5 @@ if ($reis_id !== null) {
     ]);
 }
 
-// Redirect terug naar accountpagina
 header("Location: /account.php");
 exit;

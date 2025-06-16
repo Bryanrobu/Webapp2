@@ -19,11 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             'username' => $username
         ]);
 
-        // Redirect or confirm success
         header("Location: /login.php?reset=success");
         exit;
     } else {
-        // User not found — optional error message
         header("Location: /forgot-password.php?error=user-not-found");
         exit;
     }

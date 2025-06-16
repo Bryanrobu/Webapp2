@@ -55,7 +55,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $reis_id = (int) $_GET["reis_id"];
 
-    // Ophalen van gegevens
     $stmt = $conn->prepare("SELECT * FROM reizen WHERE id = :reis_id");
     $stmt->bindParam(':reis_id', $reis_id, PDO::PARAM_INT);
     $stmt->execute();

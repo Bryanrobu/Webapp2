@@ -19,7 +19,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $success = $db->add_user($user, $pass, $email);
     if ($success) {
-        // Get the user back to set session
         $users = $db->get_users($user);
         $row = $users[0] ?? null;
 
