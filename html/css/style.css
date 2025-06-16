@@ -121,6 +121,7 @@ a {
     font-size: 1.2vw;
     background-color: #f26430;
     transition: all 0.3s ease-out;
+    margin-left: 10vw;
 }
 
 .login:hover {
@@ -459,10 +460,7 @@ tr:nth-child(even) {
 }
 
 .populaire-bestemmingen-cont {
-    width: 100%;
     height: fit-content;
-    background-color: #254E70;
-    gap: 3vw;
 }
 
 .populaire-bestemmingen-blokje {
@@ -472,8 +470,11 @@ tr:nth-child(even) {
     background-color: #FFFFFF;
 }
 
-.homepage-bestemmingenc-cont {
+.homepage-bestemmingen-cont {
     margin: 5vw auto;
+    background-color: #8EE3EF;
+    padding: 2vw;
+    border-radius: 2vw;
 }
 
 .homepage-bestemmingen-title {
@@ -566,7 +567,8 @@ tr:nth-child(even) {
 .reizen-blokje {
     width: 35vw;
     height: 17.5vw;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
+    border: solid #8EE3EF 0.4vw;
     border-radius: 2vw;
     padding: 0.5vw;
     margin: 4vw auto;
@@ -808,7 +810,10 @@ tr:nth-child(even) {
     font-family: Arial, Helvetica, sans-serif;
     margin: 3vw auto;
     gap: 3vw;
+    height: 30vw;
+    background-color: #ffffff;
 }
+
 .admin-headtxt {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3vw;
@@ -829,4 +834,3 @@ tr:nth-child(even) {
     width: fit-content;
     padding: 2vw;
 }
-
