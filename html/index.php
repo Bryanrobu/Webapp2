@@ -23,8 +23,8 @@ $is_logged_in = isset($_SESSION["user"]);
             <button type="submit" class="verzend-knop">Zoeken</button>
         </form>
 
-        <div class="populaire-bestemmingen-cont center row">
-            <div class="homepage-bestemmingenc-cont center column">
+        <div class="row">
+            <div class="homepage-bestemmingen-cont center column">
                 <h1 class="homepage-bestemmingen-title">Populaire bestemmingen</h1>
                 <div class="populaire-bestemmingen-blokje">
                 </div>
@@ -33,7 +33,7 @@ $is_logged_in = isset($_SESSION["user"]);
                 <div class="populaire-bestemmingen-blokje">
                 </div>
             </div>
-            <div class="homepage-bestemmingenc-cont center column">
+            <div class="homepage-bestemmingen-cont column">
                 <h1 class="homepage-bestemmingen-title">Last-minute bestemmingen</h1>
                 <div class="populaire-bestemmingen-blokje">
                 </div>
