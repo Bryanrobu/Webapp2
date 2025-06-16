@@ -87,7 +87,7 @@ $is_logged_in = isset($_SESSION["user"]);
                 $pdo = $db->get_connection();
 
 
-                $template = '<div class="reviews"> <h1> %s </h1> <br> %s </div>';
+                $template = '<div class="reviews column"> <h1 class="review-template-name"> %s </h1> <h2 class="review-template-stars"> %s </h2>  <h3 class="review-template-message"> %s </h3> </div>';
 
                 $stmt = $pdo->prepare("SELECT * FROM recensies WHERE reis_id=:reis_id");
                 $stmt->execute(["reis_id" => $_GET["id"]]);
@@ -99,7 +99,7 @@ $is_logged_in = isset($_SESSION["user"]);
                     $stmt->execute(["id" => $row["user_id"]]);
                     $user = $stmt->fetch();
 
-                    echo sprintf($template, $user["username"], $row["content"]);
+                    echo sprintf($template, $user["username"], $row["score"] > 0 ? "Score: " . $row["score"] . "/5" : "", $row["content"], );
                 }
 
                 ?>
