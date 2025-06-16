@@ -1,6 +1,11 @@
 <?php
 session_start();
 $is_logged_in = isset($_SESSION["user"]);
+
+if (!isset($_SESSION["user"])) {
+        header("location: /");
+        exit;
+    }
 ?>
 
 <!DOCTYPE html>
