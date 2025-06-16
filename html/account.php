@@ -13,6 +13,7 @@
     require 'process/db.php';
        
     $db = new db();
+    $conn = $db->get_connection();
     $users = $db->get_users($username);
     
     $row = $users[0] ?? null;
@@ -21,6 +22,17 @@
         header("location: /");
         exit;
     }
+
+    $user_id = $_SESSION["id"];
+
+    $stmt = $conn->prepare("
+        SELECT reizen.* 
+        FROM reizen
+        JOIN user_reizen ON reizen.id = user_reizen.reis_id
+        WHERE user_reizen.user_id = :user_id
+    ");
+    $stmt->execute(['user_id' => $user_id]);
+    $geboekte_reizen = $stmt->fetchAll();
     
     ?>
 
@@ -49,8 +61,27 @@
                 <a href="process/logout-process.php"><p class="account-button pointer">Uitloggen</p></a>
             </div>
         </div>
-    </main>
-    
+        <h2 class="center">Mijn geboekte reizen</h2>
+        <div class="reizen-lijst">
+            <?php if (empty($geboekte_reizen)): ?>
+                <p>Je hebt nog geen reizen geboekt.</p>
+            <?php else: ?>
+                <?php foreach ($geboekte_reizen as $reis): ?>
+                    <div class="reis-card row center">
+                        <div class="column center">
+                            <h3><?php echo $reis['land']; ?></h3>
+                            <p>omschrijving: <?php echo $reis['omschrijving']; ?></p>
+                            <a href="/reizen-details.php?id=<?php echo $reis['id']; ?>">Bekijk details</a>
+                            <form action="process/annuleer.php" method="POST">
+                                <input type="hidden" name="reis_id" value="<?php echo $reis['id']; ?>">
+                                <button type="submit"> Annuleer boeking </button>
+                            </form>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        </div>
+    </main>    
     <?php include_once ('includes/footer.php'); ?>
 </body>
 </html>
