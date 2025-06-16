@@ -23,9 +23,6 @@
                 <a href="../admin/admin.php" class="menu-text">
                     Admin
                 </a>
-                <a href="../admin/edit.php" class="menu-text">
-                    Aanpassen
-                </a>
                 <a href="../admin/geboekt.php" class="menu-text center">
                     Geboekt
                 </a>
