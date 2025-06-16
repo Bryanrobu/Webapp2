@@ -61,20 +61,20 @@
                 <a href="process/logout-process.php"><p class="account-button pointer">Uitloggen</p></a>
             </div>
         </div>
-        <h2 class="center">Mijn geboekte reizen</h2>
+        <h2 class="reizen-headtxt center">Mijn geboekte reizen</h2>
         <div class="reizen-lijst">
             <?php if (empty($geboekte_reizen)): ?>
-                <p class="center">Je hebt nog geen reizen geboekt.</p>
+                <p class="geen-reizen-txt center">Je hebt nog geen reizen geboekt.</p>
             <?php else: ?>
                 <?php foreach ($geboekte_reizen as $reis): ?>
                     <div class="reis-card row center">
-                        <div class="column center">
-                            <h3><?php echo $reis['land']; ?></h3>
-                            <p>omschrijving: <?php echo $reis['omschrijving']; ?></p>
-                            <a href="/reizen-details.php?id=<?php echo $reis['id']; ?>">Bekijk details</a>
+                        <div class="column geboekte-reizen-template center">
+                            <h3 class="land-template"><?php echo $reis['land']; ?></h3>
+                            <p class="omschrijving-template">omschrijving: <?php echo $reis['omschrijving']; ?></p>
+                            <a href="/reizen-details.php?id=<?php echo $reis['id']; ?>" class="bekijk-details-template pointer">Bekijk details</a>
                             <form action="process/annuleer.php" method="POST">
                                 <input type="hidden" name="reis_id" value="<?php echo $reis['id']; ?>">
-                                <button type="submit"> Annuleer boeking </button>
+                                <button type="submit"class="annuleer-boeking-template pointer"> Annuleer boeking </button>
                             </form>
                         </div>
                     </div>
