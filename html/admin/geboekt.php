@@ -22,6 +22,41 @@ if (!$is_admin) {
 </head>
 <body>
     <?php include_once ('../includes/admin-header.php'); ?>
+    <?php $template = 
+    '
+    <div class="reizen-blokje center column">
+        <div class="reizen-blokje-header center column">
+            <h1 class="reizen-headtxt">Reis naar %s</h1>
+        </div>
+        <form method="POST" action="../process/verwijder-reis.php"">
+            <input type="hidden" name="reis_id" value="%s">
+            <button type="submit" class="delete-edit-button pointer">Verwijder</button>
+        </form>
+        <form method="POST" action="bewerken.php?reis_id=%s">
+            <button type="submit" class="delete-edit-button pointer">Aanpassen</button>
+        </form>
+    </div>
+    '; 
+
+    include('../process/db.php');
+    $db = new db();
+    $conn = $db->get_connection();
+    $result = [];
+
+    $sql = "SELECT * FROM reizen";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $result = $stmt->fetchAll();
+    ?>
+
+    <section class="reizen-spacer-container center row">
+    <?php
+        foreach ($result as $row) {
+            echo sprintf($template, $row["land"], $row["id"], $row["id"]);
+        }
+    ?>
+    </section>
+
     <?php include_once ('../includes/footer.php'); ?>
 </body>
 </html>
