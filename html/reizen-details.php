@@ -15,7 +15,20 @@ $is_logged_in = isset($_SESSION["user"]);
 </head>
 
 <body>
-    <?php include_once('includes/header.php'); ?>
+    <?php include_once('includes/header.php');
+    include("process/db.php");
+    $db = new db();
+    $conn = $db->get_connection();
+    $result = [];
+    $id = $_GET["id"];
+    if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id'])) {
+        $sql = "SELECT * FROM reizen WHERE id = :id";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute(['id' => $id]);
+        $result = $stmt->fetchAll();
+        $row = $result[0] ?? null;
+    }
+    ?>
     <main>
         <div class="details-cont center column">
             <img src="../images/VakantiePlaatje.jpg" alt="Foto van een vakantie" class="plaatje-details">
@@ -23,41 +36,24 @@ $is_logged_in = isset($_SESSION["user"]);
             <div class="details-beschrijving-cont center row">
                 <div class="details-beschrijving">
                     <div class="land">
-                        <h1>Mallorca</h1> <br>
+                        <h1><?php echo $row["land"] ?></h1>
                     </div>
                     <div class="land">
-                        <h2>Mallorcastraat 27</h2>
+                        <h2><?php echo $row["adress"] ?></h2>
                     </div>
                     <div class="lange-beschrijving-land">
-                        Mallorca is het grootste en meest veelzijdige eiland van de Balearen. Geniet van uitgestrekte
-                        zandstranden, helderblauwe baaien en charmante dorpjes zoals Valldemossa en Sóller. De bruisende
-                        hoofdstad Palma biedt cultuur, gastronomie en sfeervolle straatjes, terwijl de ruige bergen van
-                        de Serra de Tramuntana uitnodigen tot wandelen en fietsen. Of je nu op zoek bent naar
-                        ontspanning, natuur of cultuur. Mallorca heeft het allemaal.
+                        <?php echo $row["beschrijving"] ?>
                     </div>
                     <div class="algemene-info-hotel center column">
                         <h1>Algemene informatie over het hotel</h1>
                         <div class="cont-faciliteiten-activiteiten center row">
                             <div class="faciliteiten column center">
                                 <h1>Faciliteiten</h1> <br>
-                                - Gratis wifi in openbare ruimte <br>
-                                - Gratis wifi op de kamer<br>
-                                - Receptie (24 uur)<br>
-                                - Bagageruimte<br>
-                                - Zwembad <br> <br>
-                                Tegen betaling<br>
-                                - Restaurant<br>
-                                - Winkeltje(s)<br>
-                                - Wasservice<br>
+                                <?php echo $row["faciliteiten"] ?>
                             </div>
                             <div class="activiteiten column center">
                                 <h1>Activiteiten</h1> <br>
-                                - Beachvolleybal <br>
-                                - Fitnessfaciliteiten <br>
-                                - Multisportterrein <br>
-                                - RiuFit groepslessen <br><br>
-                                Tegen betaling<br>
-                                - RiuArt atelier<br>
+                                <?php echo $row["activiteiten"] ?>
                             </div>
 
                         </div>

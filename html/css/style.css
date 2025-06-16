@@ -813,6 +813,7 @@ tr:nth-child(even) {
     margin: 3vw auto;
     gap: 3vw;
     height: 30vw;
+    font-size: 1.1vw;
 }
 
 .admin-headtxt {
