@@ -58,12 +58,6 @@ a {
     justify-content: center;
 }
 
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .menu-bar {
     gap: 2vw;
     display: flex;
@@ -835,6 +829,57 @@ tr:nth-child(even) {
     color: #000000;
     margin-top: 0.4vw;
 }
+
+.geen-reizen-txt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vw;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+.geboekte-reizen-template {
+    gap: 0.75vw;
+    background-color: #37718E;
+    width: fit-content;
+    margin-bottom: 2vw;
+    margin-top: 1vw;
+    border-radius: 2vw;
+    padding: 1vw;
+}
+
+.land-template {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+}
+
+.omschrijving-template {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+}
+
+.bekijk-details-template {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    transition: all 0.3s;
+}.bekijk-details-template:hover {
+    transition: all 0.3s;
+    text-decoration: underline;
+}
+
+.annuleer-boeking-template {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.7vw;
+    background-color: #8EE3EF;
+    border-radius: 2vw;
+    border: none;
+    transition: all 0.3s;
+}.annuleer-boeking-template:hover {
+    background-color: #8ee4ef96;
+    transition: all 0.3s;
 
 .delete-edit-button {
     background-color: #254E70;
