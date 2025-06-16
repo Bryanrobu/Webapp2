@@ -652,6 +652,7 @@ tr:nth-child(even) {
 .details-beschrijving-cont {
     width: 75vw;
     height: fit-content;
+    padding-bottom: 2.5vw;
     background-color: #FFF;
     
 }
@@ -796,6 +797,7 @@ tr:nth-child(even) {
     font-family: Arial, Helvetica, sans-serif;
     padding: 1vw;
     border-radius: 1vw;
+    gap: 0.5vvw;
 }
 
 .reviews-titel{
@@ -834,3 +836,24 @@ tr:nth-child(even) {
     width: fit-content;
     padding: 2vw;
 }
+<<<<<<< Updated upstream
+=======
+
+.review-template-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    color: #000000;
+}
+
+.review-template-stars {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vw;
+}
+
+.review-template-message {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8vw;
+    color: #000000;
+    margin-top: 0.4vw;
+}
+>>>>>>> Stashed changes
