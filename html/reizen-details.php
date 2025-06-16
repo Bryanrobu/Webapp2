@@ -55,16 +55,11 @@ $is_logged_in = isset($_SESSION["user"]);
                                 <h1>Activiteiten</h1> <br>
                                 <?php echo $row["activiteiten"] ?>
                             </div>
-
                         </div>
                     </div>
 
 
-                    <form class="datum-vertrek center column" method="post" action="process/boeken.php">
-                        <label for="datum" class="datum-text">Kies een datum van vertrek:</label>
-                        <input type="date" id="datum-vertrek" name="datum-vertrek" class="label-date" required>
-                        <label for="datum" class="datum-text">Kies een datum van terugkomst:</label>
-                        <input type="date" id="datum-terugkomst" name="datum-terugkomst" class="label-date" required>
+                    <form class="center column" method="post" action="process/boeken.php?id=<?php echo $row["id"] ?>">
                         <button type="submit" class="boek-nu-knop">Boek nu</button>
                     </form>
                 </div>
