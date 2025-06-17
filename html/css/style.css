@@ -1,0 +1,1247 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    cursor: default;
+}
+
+body {
+    background-color: #254E70;
+}
+
+header {
+    display: flex;
+    height: fit-content;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    width: 100%;
+    background-color: #8EE3EF;
+    align-items: center;
+    justify-content: center;
+    gap: 8vw;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    cursor: pointer;
+    color: #000000;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+.black {
+    color: #000000;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-bar {
+    gap: 2vw;
+    display: flex;
+    height: 2vw;
+    width: fit-content;
+    background-color: #8EE3EF;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-sides-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    width: 24vw;
+}
+
+.menu-text {
+    color: #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.8vw;
+    border-bottom: #f26430 solid 0.3vw;
+    transition: all 0.1s ease-out;
+}
+
+.menu-text:hover {
+    border-bottom: #f26430 solid 0.5vw;
+    transition: all 0.1s ease-in;
+}
+
+.naam-reisbureau {
+    color: #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+}
+
+.reisbureau-logo {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    border-radius: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    background-color: #f26430;
+    transition: all 0.3s ease-out;
+    margin-left: 10vw;
+}
+
+.login:hover {
+    padding: 1.2vw;
+    transition: all 0.3s ease-in;
+}
+
+.footer {
+    display: flex;
+    height: fit-content;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    width: 100%;
+    background-color: #8EE3EF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container {
+    align-items: center;
+    justify-content: center;
+    width: 33vw;
+    gap: 4vw;
+}
+
+.footer-links:hover {
+    text-decoration: underline;
+}
+
+.footer-image {
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.footer-image:hover {
+    transform: scale(1.1);
+    rotate: -10deg;
+    transition: all 0.3s ease-in;
+}
+
+/* over-ons */
+
+.over-ons-cont {
+    background-color: #FFFFFF;
+    border-radius: 2vw;
+    width: 50vw;
+    height: fit-content;
+    margin: 5vw auto;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 0.1vw solid #dddddd;
+    text-align: left;
+    padding: 0.8vw;
+    font-size: 1.1vw;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.over-ons-cont h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    ;
+    font-size: 2vw;
+}
+
+.over-ons-cont span {
+    font-family: Arial, Helvetica, sans-serif;
+    ;
+    font-size: 1.1vw;
+}
+
+/* Login */
+
+.login-form {
+    background-color: #AEF3E7;
+    border-radius: 2vw;
+    width: 30vw;
+    height: fit-content;
+    margin: 5vw auto;
+    padding: 3vw;
+    gap: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
+
+.login-button {
+    width: 10vw;
+    padding: 1vw;
+    border-radius: 2vw;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    background-color: #37718ed3;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.login-button:hover {
+    background-color: #37718E;
+    transition: all 0.3s ease-in;
+}
+
+.login-input {
+    width: 100%;
+    padding: 1vw;
+    border-radius: 2vw;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    cursor: text;
+}
+
+.login-input:hover {
+    outline: 0.2vw solid #37718E;
+}
+
+.login-input:focus {
+    outline: 0.2vw solid #37718E;
+}
+
+.login-input::placeholder {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
+
+.login-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    color: #000000;
+}
+
+.login-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8vw;
+    color: #000000;
+    text-align: center;
+}
+
+/* Register */
+
+.signup-forgot-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    color: #000000;
+    padding: 1vw;
+    border-radius: 2vw;
+    background-color: #AEF3E7;
+    width: fit-content;
+}
+
+.signup-forgot-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 4.5vw;
+    margin-bottom: 5vw;
+}
+
+/* Contact pagina */
+
+.form-cont {
+    margin: 5vw auto;
+    gap: 2vw;
+}
+
+.formulier {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.formulier-input {
+    background-color: #FFFFFF;
+    border: solid;
+    border-color: #000000;
+    border-width: 0.3vw;
+    border-radius: 2vw;
+    padding: 1.5vw;
+    width: 50vw;
+    height: 0.7vw;
+    font-size: 1vw;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: text;
+    outline: none;
+}
+
+.formulier-input-lang {
+    background-color: #FFFFFF;
+    border: solid;
+    border-color: #000000;
+    border-width: 0.3vw;
+    border-radius: 2vw;
+    padding: 1.5vw;
+    width: 50vw;
+    height: 15vw;
+    font-size: 1vw;
+    color: #000000;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: text;
+    outline: none;
+}
+
+.formulier-input-medium {
+    background-color: #FFFFFF;
+    border: solid;
+    border-color: #000000;
+    border-width: 0.3vw;
+    border-radius: 2vw;
+    padding: 1.5vw;
+    width: 50vw;
+    height: 7.5vw;
+    font-size: 1vw;
+    color: #000000;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: text;
+    outline: none;
+
+}
+
+.verzend-knop {
+    background-color: #8ee4efbd;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    align-self: center;
+    padding: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: 1.4vw;
+    border: none;
+    margin-top: 1.5vw;
+    margin-bottom: 2vw;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.verzend-knop:hover {
+    background-color: #8EE3EF;
+    transition: all 0.3s ease-in;
+}
+
+.andere-mogelijkheden-cont {
+    width: 50vw;
+    height: 20vw;
+    background-color: #FFFFFF;
+    border: solid;
+    border-color: #000000;
+    border-width: 0.3vw;
+    border-radius: 2vw;
+    margin: 5vw auto;
+}
+
+.andere-mogelijkheden-cont h1 {
+    color: #254E70;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2vw;
+}
+
+.andere-mogelijkheden-cont span {
+    font-size: 1.4vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titel-contact {
+    margin: 3vw auto;
+}
+
+.titel-contact h1 {
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Privacyverklaring */
+.privacyverklaring {
+    width: 50vw;
+    margin: 5vw auto;
+    padding: 1vw;
+    border-radius: 1vw;
+    height: fit-content;
+    background-color: #AEF3E7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
+
+.titel-privacyverklaring {
+    font-size: 1.3vw;
+    margin: 3vw auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Home pagina */
+
+.home-cont {
+    width: 100%;
+    height: 30vw;
+    background-color: #37718E;
+    background-image: url(../images/VakantiePlaatje.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.zoek-balk {
+    background-color: #FFFFFF;
+    border: solid;
+    border-color: #000000;
+    border-width: 0.3vw;
+    border-radius: 2vw;
+    padding: 1.4vw;
+    width: 25vw;
+    height: 0.7vw;
+    font-size: 1vw;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: text;
+    outline: none;
+}
+
+.populaire-bestemmingen-cont {
+    height: fit-content;
+}
+
+.populaire-bestemmingen-blokje {
+    width: 25vw;
+    height: 15vw;
+    margin: 2vw;
+    background-color: #FFFFFF;
+}
+
+.homepage-bestemmingen-cont {
+    margin: 5vw auto;
+    background-color: #8EE3EF;
+    padding: 2vw;
+    border-radius: 2vw;
+}
+
+.homepage-bestemmingen-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+.home-page-welkom-cont {
+    width: 100%;
+    height: fit-content;
+    margin: 8vw auto;
+}
+
+.welkom-text {
+    width: 60vw;
+    height: fit-content;
+    background-color: #AEF3E7;
+    border-radius: 2vw;
+    padding: 1vw;
+    text-align: center;
+}
+
+.welkom-text h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+    padding: 1vw;
+}
+
+.boek-nu {
+    height: fit-content;
+}
+
+.boek-nu:hover {
+    text-decoration: underline;
+}
+
+.boek-nu h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6vw;
+}
+
+.pijltje {
+    height: 1vw;
+    width: 1vw;
+}
+
+.account-headtxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    color: #000000;
+}
+
+.account-subtxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    color: #000000;
+}
+
+.account-info-container {
+    width: 30vw;
+    height: fit-content;
+    background-color: #AEF3E7;
+    border-radius: 2vw;
+    padding: 2vw;
+    gap: 1vw;
+    margin: 5vw auto;
+}
+
+.account-button-container {
+    gap: 1vw;
+}
+
+.account-button {
+    width: 10vw;
+    padding: 1vw;
+    border-radius: 2vw;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    background-color: #37718ed3;
+    transition: all 0.3s ease-out;
+    text-align: center;
+}
+
+.account-button:hover {
+    background-color: #37718E;
+    transition: all 0.3s ease-in;
+}
+
+.reizen-blokje {
+    width: 35vw;
+    height: 17.5vw;
+    background-color: #ffffff;
+    border: solid #8EE3EF 0.4vw;
+    border-radius: 2vw;
+    padding: 0.5vw;
+    margin: 4vw auto;
+    justify-content: space-evenly;
+}
+
+.reizen-admin-blokje {
+    width: 35vw;
+    height: 10vw;
+    background-color: #ffffff;
+    border: solid #8EE3EF 0.4vw;
+    border-radius: 2vw;
+    padding: 0.5vw;
+    margin: 4vw auto;
+    justify-content: space-evenly;
+}
+
+.reizen-cont {
+    height: 15vw;
+    width: 81vw;
+    background-color: #37718E;
+    border-radius: 2vw;
+    margin: 3vw auto 0vw;
+}
+
+.reizen-headtxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    color: #000000;
+    text-align: center;
+}
+
+.reizen-subtxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    color: #000000;
+    text-align: center;
+}
+
+.reizen-txt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    color: #000000;
+    text-align: center;
+}
+
+.reizen-leesmeer {
+    width: 5vw;
+    padding: 1vw;
+    border-radius: 2vw;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    background-color: #37718ed3;
+    transition: all 0.3s ease-out;
+    text-align: center;
+}
+
+.reizen-leesmeer:hover {
+    background-color: #37718E;
+    transition: all 0.3s ease-in;
+}
+
+.reizen-spacer-container {
+    width: 90vw;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* reizen-details pagina */
+
+.details-cont {
+    width: 100%;
+    height: fit-content;
+    margin: 4vw auto;
+}
+
+.plaatje-details {
+    width: 75vw;
+    height: fit-content;
+    background-color: #E040FB;
+}
+
+.details-beschrijving {
+    width: 70vw;
+    height: fit-content;
+    background-color: #8EE3EF;
+    border-radius: 1vw;
+    margin-top: -15vw;
+}
+
+.details-beschrijving-cont {
+    width: 75vw;
+    height: fit-content;
+    padding-bottom: 2.5vw;
+    background-color: #FFF;
+
+}
+
+.faciliteiten {
+    width: 17vw;
+    height: fit-content;
+    background-color: #8EE3EF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+
+.faciliteiten h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+}
+
+.activiteiten {
+    width: 17vw;
+    height: fit-content;
+    background-color: #8EE3EF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+
+.activiteiten h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+}
+
+.restaurants {
+    width: 17vw;
+    height: fit-content;
+    background-color: #8EE3EF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+
+.restaurants h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+}
+
+.zwembaden {
+    width: 17vw;
+    height: fit-content;
+    background-color: #8EE3EF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+
+.zwembaden h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+}
+
+.land {
+    width: fit-content;
+    height: fit-content;
+    background-color: #8EE3EF;
+    margin: 1vw auto;
+}
+
+.land h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+}
+
+.land h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.1vw;
+}
+
+.lange-beschrijving-land {
+    width: 50vw;
+    height: fit-content;
+    background-color: #37718E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+    padding: 1vw;
+    margin: 2vw auto;
+    border-radius: 1.2vw;
+}
+
+.boek-nu-knop {
+    background-color: #37718E;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    align-self: center;
+    padding: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-radius: 0.9vw;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5vw;
+    width: fit-content;
+}
+
+.reviews-cont {
+    width: 80vw;
+    height: fit-content;
+    background-color: #254E70;
+    margin: 5vw auto;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+}
+
+.reviews {
+    width: 25vw;
+    height: 15vw;
+    margin: 2vw;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1vw;
+    border-radius: 1vw;
+    gap: 0.5vvw;
+}
+
+.reviews-titel {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    margin-top: 5vw;
+}
+
+.algemene-info-hotel {
+    width: fit-content;
+    height: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3vw auto;
+    gap: 3vw;
+    height: 30vw;
+    font-size: 1.1vw;
+}
+
+.admin-headtxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    color: #000000;
+    text-align: center;
+}
+
+.admin-subtxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.75vw;
+    color: #000000;
+    text-align: center;
+}
+
+.admin-bg {
+    background-color: #37718E;
+    border-radius: 2vw;
+    width: fit-content;
+    padding: 2vw;
+}
+
+.review-template-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    color: #000000;
+}
+
+.review-template-stars {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vw;
+}
+
+.review-template-message {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8vw;
+    color: #000000;
+    margin-top: 0.4vw;
+}
+
+.geen-reizen-txt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vw;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+.geboekte-reizen-template {
+    gap: 0.75vw;
+    background-color: #37718E;
+    width: fit-content;
+    margin-bottom: 2vw;
+    margin-top: 1vw;
+    border-radius: 2vw;
+    padding: 1vw;
+}
+
+.land-template {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+}
+
+.omschrijving-template {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+}
+
+.bekijk-details-template {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    transition: all 0.3s;
+}
+
+.bekijk-details-template:hover {
+    transition: all 0.3s;
+    text-decoration: underline;
+}
+
+.annuleer-boeking-template {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.7vw;
+    background-color: #8EE3EF;
+    border-radius: 2vw;
+    border: none;
+    transition: all 0.3s;
+}
+
+.annuleer-boeking-template:hover {
+    background-color: #8ee4ef96;
+    transition: all 0.3s;
+}
+
+.delete-edit-button {
+    background-color: #254E70;
+    color: white;
+    border: none;
+    padding: 0.5vw 1vw;
+    border-radius: 2vw;
+    transition: all 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+}
+
+.delete-edit-button:hover {
+    background-color: #254e70b7;
+    transition: all 0.3s;
+}
+
+.edit-subtxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    text-align: center;
+}
+
+.admin-gap {
+    gap: 2vw;
+}
+
+.reizen-user {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85vw;
+}
+
+.reizen-geboekt-txt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+    margin-top: 3vw;
+    color: #000000;
+    text-align: center;
+}
+
+.reizen-no-users {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85vw;
+    color: #000000;
+    text-align: center;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    border: #000000 solid 0.2vw;
+    padding: 0.5vw;
+    padding-left: 0.75vw; padding-right: 0.75vw;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 2vw;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}#topBtn:hover {
+    scale: 1.1  ;
+    transition: all 0.3s ease-in;
+}
+
+@media only screen and (max-width: 426px) {
+
+    footer{
+        width: 100vw;
+    }
+
+    .mobile-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .populaire-bestemmingen-blokje {
+        width: 45vw;
+        height: 25vw;
+    }
+
+    .homepage-bestemmingen-title {
+        font-size: 3.5vw;
+    }
+
+    .zoek-balk {
+        width: 55vw;
+        height: 4.5vw;
+        font-size: 2.8vw;
+    }
+
+    .verzend-knop {
+        font-size: 5vw;
+        font-weight: bold;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        margin-top: 2.5vw;
+    }
+
+    .welkom-text h1 {
+        font-size: 2.5vw;
+        padding: 1vw;
+    }
+
+    .boek-nu h1 {
+        font-size: 3vw;
+    }
+
+    .pijltje {
+        height: 2.2vw;
+        width: 2.2vw;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 5vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-sides-cont {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .login {
+        margin-left: 0vw;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+
+    .menu-text {
+        font-size: 5vw;
+        border-bottom: #f26430 solid 1vw;
+    }
+
+    .menu-text:hover {
+        border-bottom: #f26430 solid 1.5vw;
+    }
+
+    .reizen-cont {
+        height: fit-content;
+        padding-top: 3.5vw;
+    }
+
+    .naam-reisbureau {
+        font-size: 6vw;
+    }
+
+    .reisbureau-logo {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        font-size: 3vw;
+        gap: 5vw;
+    }
+
+    .footer-image {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .over-ons-cont {
+        width: 70vw;
+        height: fit-content;
+    }
+
+    .over-ons-cont h1 {
+        font-size: 5vw;
+    }
+
+    .over-ons-cont span {
+        font-size: 2.4vw;
+    }
+
+    td,
+    th {
+        font-size: 2.4vw;
+    }
+
+    .titel-contact h1 {
+        font-size: 6vw;
+    }
+
+    .formulier-input {
+        width: 80vw;
+        height: 4vw;
+        font-size: 4vw;
+    }
+
+    .formulier-input-lang {
+        width: 80vw;
+        height: 30vw;
+        font-size: 4vw;
+    }
+
+    .andere-mogelijkheden-cont {
+        width: 60vw;
+        height: 30vw;
+    }
+
+    .andere-mogelijkheden-cont h1 {
+        font-size: 3.3vw;
+    }
+
+    .andere-mogelijkheden-cont span {
+        font-size: 2.7vw;
+    }
+
+    .reizen-headtxt {
+        font-size: 4.5vw;
+    }
+
+    .reizen-subtxt {
+        margin-top: 2vw;
+        font-size: 3.8vw;
+    }
+
+    .reizen-txt {
+        font-size: 2.7vw;
+    }
+
+    .reizen-blokje {
+        width: 60vw;
+        height: 35vw;
+    }
+
+    .reizen-leesmeer {
+        font-size: 4vw;
+        width: 20vw;
+        margin-top: 3vw;
+    }
+
+    .login-form {
+        width: 50vw;
+        height: fit-content;
+    }
+
+    .login-title {
+        font-size: 3.5vw;
+    }
+
+    .login-text {
+        font-size: 3.2vw;
+    }
+
+    .login-input {
+        font-size: 3vw;
+    }
+
+    .login-input::placeholder {
+        font-size: 3vw;
+    }
+
+    .login-button {
+        font-size: 3.2vw;
+        width: 20vw;
+        margin-top: 2vw;
+    }
+
+    .signup-forgot-cont p {
+        font-size: 3vw;
+    }
+
+    .formulier-input-medium {
+        width: 80vw;
+        height: 20vw;
+        font-size: 4vw;
+    }
+
+    .admin-headtxt {
+        font-size: 5vw;
+    }
+
+    .admin-subtxt {
+        font-size: 4.5vw;
+    }
+
+    .reizen-admin-blokje {
+        width: 65vw;
+        height: 30vw;
+    }
+
+    .reizen-no-users {
+        font-size: 3.5vw;
+    }
+
+    .delete-edit-button {
+        font-size: 3.2vw;
+    }
+
+    .reizen-geboekt-txt {
+        font-size: 6vw;
+    }
+
+    .account-info-container {
+        width: 60vw;
+    }
+
+    .account-headtxt {
+        font-size: 5vw;
+    }
+
+    .account-subtxt {
+        font-size: 4vw;
+    }
+
+    .account-button {
+        width: 23vw;
+        font-size: 3vw;
+    }
+
+    .account-button-container {
+        gap: 3vw;
+    }
+
+    .geen-reizen-txt{
+        font-size: 4vw;
+    }
+
+    .titel-privacyverklaring{
+        font-size: 3.5vw;
+    }
+
+    .privacyverklaring{
+        font-size: 3vw;
+        width: 80vw;
+    }
+
+    #topBtn {
+        font-size: 5vw;
+        padding: 2vw;
+        padding-left: 4vw; padding-right: 4vw;
+    }
+}
