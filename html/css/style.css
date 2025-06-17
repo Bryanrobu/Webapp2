@@ -951,6 +951,26 @@ tr:nth-child(even) {
     text-align: center;
 }
 
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    border: #000000 solid 0.2vw;
+    padding: 0.5vw;
+    padding-left: 0.75vw; padding-right: 0.75vw;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 2vw;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}#topBtn:hover {
+    scale: 1.1  ;
+    transition: all 0.3s ease-in;
+}
+
 @media only screen and (max-width: 426px) {
 
     footer{
@@ -1217,5 +1237,11 @@ tr:nth-child(even) {
     .privacyverklaring{
         font-size: 3vw;
         width: 80vw;
+    }
+
+    #topBtn {
+        font-size: 5vw;
+        padding: 2vw;
+        padding-left: 4vw; padding-right: 4vw;
     }
 }

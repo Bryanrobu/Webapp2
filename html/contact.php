@@ -18,9 +18,9 @@ $is_logged_in = isset($_SESSION["user"]);
     <?php include_once('includes/header.php'); ?>
 
     <main>
-    <div class="titel-contact center">
-        <h1>Contacteer ons</h1>
-    </div>
+        <div class="titel-contact center">
+            <h1>Contacteer ons</h1>
+        </div>
 
         <div class="form-cont center row">
             <form class="formulier" action="https://formsubmit.co/1211888@student.roc-nijmegen.nl" method="POST">
@@ -43,6 +43,8 @@ $is_logged_in = isset($_SESSION["user"]);
     </main>
 
     <?php include_once('includes/footer.php'); ?>
+    <button id="topBtn">↑ Top</button>
 </body>
+<script src="../process/main.js"></script>
 
 </html>

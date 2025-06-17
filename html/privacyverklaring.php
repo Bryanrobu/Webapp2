@@ -19,9 +19,9 @@ $is_logged_in = isset($_SESSION["user"]);
 
     <main>
 
-    <div class="titel-privacyverklaring center">
-        <h1>Privacyverklaring</h1>
-    </div>
+        <div class="titel-privacyverklaring center">
+            <h1>Privacyverklaring</h1>
+        </div>
 
         <div class="privacyverklaring center">
             Toepasselijkheid Algemene Voorwaarden<br><br>
@@ -44,7 +44,8 @@ $is_logged_in = isset($_SESSION["user"]);
             reisovereenkomst aan met die desbetreffende organisator. In dat geval zijn zowel de
             ANVR-reizigersvoorwaarden, paragraaf 1, als de (eventuele) algemene voorwaarden van die reisorganisator van
             toepassing. Bij de pakketreisovereenkomst die u in dit geval sluit met de betreffende organisator, treedt
-            Horizon Travels B.V. alleen op als doorverkoper en wordt zij geen partij bij die pakketreisovereenkomst.<br><br>
+            Horizon Travels B.V. alleen op als doorverkoper en wordt zij geen partij bij die
+            pakketreisovereenkomst.<br><br>
 
             Als u een reis boekt die niet aan de criteria van een pakketreis voldoet en die alleen bestaat uit een los
             ticket van een luchtvaartmaatschappij waarmee Horizon Travels samenwerkt (bijvoorbeeld Horizon Air of
@@ -104,6 +105,8 @@ $is_logged_in = isset($_SESSION["user"]);
     </main>
 
     <?php include_once('includes/footer.php'); ?>
+    <button id="topBtn">↑ Top</button>
 </body>
+<script src="../process/main.js"></script>
 
 </html>

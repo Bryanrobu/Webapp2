@@ -10,12 +10,12 @@ $is_logged_in = isset($_SESSION["user"]);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../images/HorizonTravelsLogo.png" type="image/x-icon">  
+    <link rel="shortcut icon" href="../images/HorizonTravelsLogo.png" type="image/x-icon">
     <title>Over ons</title>
 </head>
 
 <body>
-    <?php include_once ('includes/header.php'); ?>
+    <?php include_once('includes/header.php'); ?>
     <main>
         <div class="over-ons-cont">
             <h1>
@@ -86,7 +86,9 @@ $is_logged_in = isset($_SESSION["user"]);
             </span>
         </div>
     </main>
-    <?php include_once ('includes/footer.php'); ?>
+    <?php include_once('includes/footer.php'); ?>
+    <button id="topBtn">↑ Top</button>
 </body>
+<script src="../process/main.js"></script>
 
 </html>

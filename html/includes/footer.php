@@ -69,8 +69,10 @@
                 <a href="https://www.instagram.com" target="_blank"><img src="../images/Instagram.png"
                         alt="Foto van het logo van instagram" class="footer-image"></a>
             </div>
+            <div class="footer-links">Lokale tijd: <span id="clock"></span></div>
         </div>
     </footer>
 </body>
+<script src="../process/main.js"></script>
 
 </html>

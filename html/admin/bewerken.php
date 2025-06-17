@@ -12,6 +12,7 @@ if (!$is_admin) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,8 +20,9 @@ if (!$is_admin) {
     <link rel="shortcut icon" href="../images/HorizonTravelsLogo.png" type="image/x-icon">
     <title>Edit</title>
 </head>
+
 <body>
-    <?php include_once ('../includes/admin-header.php'); ?>
+    <?php include_once('../includes/admin-header.php'); ?>
     <?php
     include('../process/db.php');
     $db = new db();
@@ -33,19 +35,31 @@ if (!$is_admin) {
     ?>
     <div class="form-container center column">
         <h2 class="edit-subtxt">Reis aanpassen</h2>
-        <?php if (isset($foutmelding)) echo "<p class='error'>$foutmelding</p>"; ?>
+        <?php if (isset($foutmelding))
+            echo "<p class='error'>$foutmelding</p>"; ?>
 
         <form class="formulier" action="../process/bewerk-reis.php" method="POST">
-                <input type="text" class="formulier-input" name="land" placeholder="Land:" required value="<?php echo ($reis['land']); ?>">
-                <input type="text" class="formulier-input" name="adress" placeholder="adress:" required value="<?php echo ($reis['adress']); ?>">
-                <textarea class="formulier-input-medium" name="omschrijving" placeholder="Korte omschrijving:" required><?php echo ($reis['omschrijving']); ?></textarea>
-                <textarea class="formulier-input-lang" name="beschrijving" placeholder="Lange beschrijving:" required><?php echo ($reis['beschrijving']); ?></textarea>
-                <textarea class="formulier-input-lang" name="faciliteiten" placeholder="Faciliteiten (gescheiden door <br>):" required><?php echo ($reis['faciliteiten']); ?></textarea>
-                <textarea class="formulier-input-lang" name="activiteiten" placeholder="Activiteiten (gescheiden door <br>):" required><?php echo ($reis['activiteiten']); ?></textarea>
-                <input type="hidden" name="reis_id" value="<?php echo $reis['id']; ?>">
-                <button type="submit" class="verzend-knop">Aanpassen</button>
-            </form>
+            <input type="text" class="formulier-input" name="land" placeholder="Land:" required
+                value="<?php echo ($reis['land']); ?>">
+            <input type="text" class="formulier-input" name="adress" placeholder="adress:" required
+                value="<?php echo ($reis['adress']); ?>">
+            <textarea class="formulier-input-medium" name="omschrijving" placeholder="Korte omschrijving:"
+                required><?php echo ($reis['omschrijving']); ?></textarea>
+            <textarea class="formulier-input-lang" name="beschrijving" placeholder="Lange beschrijving:"
+                required><?php echo ($reis['beschrijving']); ?></textarea>
+            <textarea class="formulier-input-lang" name="faciliteiten"
+                placeholder="Faciliteiten (gescheiden door <br>):"
+                required><?php echo ($reis['faciliteiten']); ?></textarea>
+            <textarea class="formulier-input-lang" name="activiteiten"
+                placeholder="Activiteiten (gescheiden door <br>):"
+                required><?php echo ($reis['activiteiten']); ?></textarea>
+            <input type="hidden" name="reis_id" value="<?php echo $reis['id']; ?>">
+            <button type="submit" class="verzend-knop">Aanpassen</button>
+        </form>
     </div>
-    <?php include_once ('../includes/footer.php'); ?>
+    <?php include_once('../includes/footer.php'); ?>
+    <button id="topBtn">↑ Top</button>
 </body>
+<script src="../process/main.js"></script>
+
 </html>

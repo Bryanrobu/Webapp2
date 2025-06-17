@@ -59,15 +59,15 @@ $is_logged_in = isset($_SESSION["user"]);
                     </div>
 
                     <?php
-                        if ($_GET["error"] ?? null == "already_booked") {
-                            echo '<div class="center"><div class="boek-nu-knop">Je hebt deze reis al geboekt!</div></div>';
-                        } else {
-                            echo '<form class="center column" method="post" action="process/boeken.php?id=' . $row["id"] . '">
+                    if ($_GET["error"] ?? null == "already_booked") {
+                        echo '<div class="center"><div class="boek-nu-knop">Je hebt deze reis al geboekt!</div></div>';
+                    } else {
+                        echo '<form class="center column" method="post" action="process/boeken.php?id=' . $row["id"] . '">
                                         <button type="submit" class="boek-nu-knop">Boek nu</button>
                                     </form>';
-                        }
+                    }
                     ?>
-                    
+
                 </div>
             </div>
             <div class="reviews-titel">
@@ -119,6 +119,8 @@ $is_logged_in = isset($_SESSION["user"]);
         </div>
     </main>
     <?php include_once('includes/footer.php'); ?>
+    <button id="topBtn">↑ Top</button>
 </body>
+<script src="../process/main.js"></script>
 
 </html>

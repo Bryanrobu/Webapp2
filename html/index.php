@@ -59,13 +59,16 @@ $is_logged_in = isset($_SESSION["user"]);
 
                 <h1>Boek vandaag nog en maak herinneringen voor het leven!</h1>
                 <a href="reizen.php" class="boek-nu">
-                    <h1 class="pointer">Boek nu <img src="../images/arrow-right.png"
-                        alt="Een pijltje naar rechts" class="pijltje pointer"></h1> 
+                    <h1 class="pointer">Boek nu <img src="../images/arrow-right.png" alt="Een pijltje naar rechts"
+                            class="pijltje pointer"></h1>
                 </a>
             </div>
 
         </div>
     </main>
     <?php include_once('includes/footer.php'); ?>
+    <button id="topBtn">↑ Top</button>
 </body>
+<script src="../process/main.js"></script>
+
 </html>

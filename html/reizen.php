@@ -7,16 +7,18 @@ $zoekterm = isset($_GET['search']) ? $_GET['search'] : '';
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../images/HorizonTravelsLogo.png" type="image/x-icon">  
+    <link rel="shortcut icon" href="../images/HorizonTravelsLogo.png" type="image/x-icon">
     <title>Reizen</title>
 </head>
+
 <body>
-    <?php include_once ('includes/header.php'); ?>
-    <?php 
+    <?php include_once('includes/header.php'); ?>
+    <?php
 
     include("process/db.php");
 
@@ -52,12 +54,15 @@ $zoekterm = isset($_GET['search']) ? $_GET['search'] : '';
         <button type="submit" class="verzend-knop">Zoeken</button>
     </form>
     <section class="reizen-spacer-container center row">
-    <?php
+        <?php
         foreach ($result as $row) {
             echo sprintf($template, $row["land"], $row["adress"], $row["omschrijving"], $row["id"]);
         }
-    ?>
-    </section
-    <?php include_once ('includes/footer.php'); ?>
+        ?>
+    </section>
+    <?php include_once('includes/footer.php'); ?>
+    <button id="topBtn">↑ Top</button>
 </body>
+<script src="../process/main.js"></script>
+
 </html>
