@@ -1209,4 +1209,13 @@ tr:nth-child(even) {
     .geen-reizen-txt{
         font-size: 4vw;
     }
+
+    .titel-privacyverklaring{
+        font-size: 3.5vw;
+    }
+
+    .privacyverklaring{
+        font-size: 3vw;
+        width: 80vw;
+    }
 }
