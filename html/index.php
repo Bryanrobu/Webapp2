@@ -23,7 +23,7 @@ $is_logged_in = isset($_SESSION["user"]);
             <button type="submit" class="verzend-knop">Zoeken</button>
         </form>
 
-        <div class="row">
+        <div class="row mobile-column">
             <div class="homepage-bestemmingen-cont center column">
                 <h1 class="homepage-bestemmingen-title">Populaire bestemmingen</h1>
                 <div class="populaire-bestemmingen-blokje">

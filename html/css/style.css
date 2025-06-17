@@ -362,9 +362,10 @@ tr:nth-child(even) {
     color: #000000;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5vw;
-    width: 10vw;
     align-self: center;
-    padding: 1.1vw;
+    padding: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
     border-radius: 1.4vw;
     border: none;
     margin-top: 1.5vw;
@@ -503,7 +504,10 @@ tr:nth-child(even) {
 
 .boek-nu {
     height: fit-content;
+}
 
+.boek-nu:hover {
+    text-decoration: underline;
 }
 
 .boek-nu h1 {
@@ -660,10 +664,10 @@ tr:nth-child(even) {
     height: fit-content;
     padding-bottom: 2.5vw;
     background-color: #FFF;
-    
+
 }
 
-.faciliteiten{
+.faciliteiten {
     width: 17vw;
     height: fit-content;
     background-color: #8EE3EF;
@@ -673,12 +677,12 @@ tr:nth-child(even) {
     margin-top: 1vw;
 }
 
-.faciliteiten h1{
+.faciliteiten h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.4vw;
 }
 
-.activiteiten{
+.activiteiten {
     width: 17vw;
     height: fit-content;
     background-color: #8EE3EF;
@@ -688,12 +692,12 @@ tr:nth-child(even) {
     margin-top: 1vw;
 }
 
-.activiteiten h1{
+.activiteiten h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.4vw;
 }
 
-.restaurants{
+.restaurants {
     width: 17vw;
     height: fit-content;
     background-color: #8EE3EF;
@@ -703,12 +707,12 @@ tr:nth-child(even) {
     margin-top: 1vw;
 }
 
-.restaurants h1{
+.restaurants h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.4vw;
 }
 
-.zwembaden{
+.zwembaden {
     width: 17vw;
     height: fit-content;
     background-color: #8EE3EF;
@@ -718,28 +722,29 @@ tr:nth-child(even) {
     margin-top: 1vw;
 }
 
-.zwembaden h1{
+.zwembaden h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.4vw;
 }
-.land{
+
+.land {
     width: fit-content;
     height: fit-content;
     background-color: #8EE3EF;
     margin: 1vw auto;
 }
 
-.land h1{
+.land h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5vw;
 }
 
-.land h2{
+.land h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.1vw;
 }
 
-.lange-beschrijving-land{
+.lange-beschrijving-land {
     width: 50vw;
     height: fit-content;
     background-color: #37718E;
@@ -758,7 +763,8 @@ tr:nth-child(even) {
     font-weight: bold;
     align-self: center;
     padding: 1vw;
-    padding-left: 2vw; padding-right: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
     border-radius: 0.9vw;
     border: none;
     cursor: pointer;
@@ -766,7 +772,7 @@ tr:nth-child(even) {
     width: fit-content;
 }
 
-.reviews-cont{
+.reviews-cont {
     width: 80vw;
     height: fit-content;
     background-color: #254E70;
@@ -775,7 +781,7 @@ tr:nth-child(even) {
     flex-wrap: wrap;
 }
 
-.reviews{
+.reviews {
     width: 25vw;
     height: 15vw;
     margin: 2vw;
@@ -786,13 +792,13 @@ tr:nth-child(even) {
     gap: 0.5vvw;
 }
 
-.reviews-titel{
+.reviews-titel {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5vw;
     margin-top: 5vw;
 }
 
-.algemene-info-hotel{
+.algemene-info-hotel {
     width: fit-content;
     height: fit-content;
     font-family: Arial, Helvetica, sans-serif;
@@ -873,7 +879,9 @@ tr:nth-child(even) {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2vw;
     transition: all 0.3s;
-}.bekijk-details-template:hover {
+}
+
+.bekijk-details-template:hover {
     transition: all 0.3s;
     text-decoration: underline;
 }
@@ -889,6 +897,7 @@ tr:nth-child(even) {
     border: none;
     transition: all 0.3s;
 }
+
 .annuleer-boeking-template:hover {
     background-color: #8ee4ef96;
     transition: all 0.3s;
@@ -904,6 +913,7 @@ tr:nth-child(even) {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2vw;
 }
+
 .delete-edit-button:hover {
     background-color: #254e70b7;
     transition: all 0.3s;
@@ -912,7 +922,8 @@ tr:nth-child(even) {
 .edit-subtxt {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5vw;
-    margin-top: 2vw; margin-bottom: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
     text-align: center;
 }
 
@@ -938,4 +949,264 @@ tr:nth-child(even) {
     font-size: 0.85vw;
     color: #000000;
     text-align: center;
+}
+
+@media only screen and (max-width: 426px) {
+
+    footer{
+        width: 100vw;
+    }
+
+    .mobile-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .populaire-bestemmingen-blokje {
+        width: 45vw;
+        height: 25vw;
+    }
+
+    .homepage-bestemmingen-title {
+        font-size: 3.5vw;
+    }
+
+    .zoek-balk {
+        width: 55vw;
+        height: 4.5vw;
+        font-size: 2.8vw;
+    }
+
+    .verzend-knop {
+        font-size: 5vw;
+        font-weight: bold;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        margin-top: 2.5vw;
+    }
+
+    .welkom-text h1 {
+        font-size: 2.5vw;
+        padding: 1vw;
+    }
+
+    .boek-nu h1 {
+        font-size: 3vw;
+    }
+
+    .pijltje {
+        height: 2.2vw;
+        width: 2.2vw;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 5vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-sides-cont {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .login {
+        margin-left: 0vw;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+
+    .menu-text {
+        font-size: 5vw;
+        border-bottom: #f26430 solid 1vw;
+    }
+
+    .menu-text:hover {
+        border-bottom: #f26430 solid 1.5vw;
+    }
+
+    .reizen-cont {
+        height: fit-content;
+        padding-top: 3.5vw;
+    }
+
+    .naam-reisbureau {
+        font-size: 6vw;
+    }
+
+    .reisbureau-logo {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        font-size: 3vw;
+        gap: 5vw;
+    }
+
+    .footer-image {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .over-ons-cont {
+        width: 70vw;
+        height: fit-content;
+    }
+
+    .over-ons-cont h1 {
+        font-size: 5vw;
+    }
+
+    .over-ons-cont span {
+        font-size: 2.4vw;
+    }
+
+    td,
+    th {
+        font-size: 2.4vw;
+    }
+
+    .titel-contact h1 {
+        font-size: 6vw;
+    }
+
+    .formulier-input {
+        width: 80vw;
+        height: 4vw;
+        font-size: 4vw;
+    }
+
+    .formulier-input-lang {
+        width: 80vw;
+        height: 30vw;
+        font-size: 4vw;
+    }
+
+    .andere-mogelijkheden-cont {
+        width: 60vw;
+        height: 30vw;
+    }
+
+    .andere-mogelijkheden-cont h1 {
+        font-size: 3.3vw;
+    }
+
+    .andere-mogelijkheden-cont span {
+        font-size: 2.7vw;
+    }
+
+    .reizen-headtxt {
+        font-size: 4.5vw;
+    }
+
+    .reizen-subtxt {
+        margin-top: 2vw;
+        font-size: 3.8vw;
+    }
+
+    .reizen-txt {
+        font-size: 2.7vw;
+    }
+
+    .reizen-blokje {
+        width: 60vw;
+        height: 35vw;
+    }
+
+    .reizen-leesmeer {
+        font-size: 4vw;
+        width: 20vw;
+        margin-top: 3vw;
+    }
+
+    .login-form {
+        width: 50vw;
+        height: fit-content;
+    }
+
+    .login-title {
+        font-size: 3.5vw;
+    }
+
+    .login-text {
+        font-size: 3.2vw;
+    }
+
+    .login-input {
+        font-size: 3vw;
+    }
+
+    .login-input::placeholder {
+        font-size: 3vw;
+    }
+
+    .login-button {
+        font-size: 3.2vw;
+        width: 20vw;
+        margin-top: 2vw;
+    }
+
+    .signup-forgot-cont p {
+        font-size: 3vw;
+    }
+
+    .formulier-input-medium {
+        width: 80vw;
+        height: 20vw;
+        font-size: 4vw;
+    }
+
+    .admin-headtxt {
+        font-size: 5vw;
+    }
+
+    .admin-subtxt {
+        font-size: 4.5vw;
+    }
+
+    .reizen-admin-blokje {
+        width: 65vw;
+        height: 30vw;
+    }
+
+    .reizen-no-users {
+        font-size: 3.5vw;
+    }
+
+    .delete-edit-button {
+        font-size: 3.2vw;
+    }
+
+    .reizen-geboekt-txt {
+        font-size: 6vw;
+    }
+
+    .account-info-container {
+        width: 60vw;
+    }
+
+    .account-headtxt {
+        font-size: 5vw;
+    }
+
+    .account-subtxt {
+        font-size: 4vw;
+    }
+
+    .account-button {
+        width: 23vw;
+        font-size: 3vw;
+    }
+
+    .account-button-container {
+        gap: 3vw;
+    }
+
+    .geen-reizen-txt{
+        font-size: 4vw;
+    }
 }
