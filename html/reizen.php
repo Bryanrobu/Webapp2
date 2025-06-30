@@ -30,11 +30,11 @@ $zoekterm = isset($_GET['search']) ? $_GET['search'] : '';
 
     $sql = "SELECT * FROM reizen";
 
-    if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['search'])) {
-        $search = "%" . $_GET["search"] . "%";
-        $sql = "SELECT * FROM reizen WHERE land LIKE :search OR adress LIKE :search";
-        $stmt = $conn->prepare($sql);
-        $stmt->execute(['search' => $search]);
+    if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['search'])) { // Check if the request method is GET and search parameter is set
+        $search = "%" . $_GET["search"] . "%"; // Get the search term from the URL parameters and prepare it for a LIKE query
+        $sql = "SELECT * FROM reizen WHERE land LIKE :search OR adress LIKE :search"; // Prepare the SQL statement to search for travels by destination or address
+        $stmt = $conn->prepare($sql); // Prepare the SQL statement with a placeholder for the search term
+        $stmt->execute(['search' => $search]); // Execute the statement with the search term
         $result = $stmt->fetchAll();
     }
 

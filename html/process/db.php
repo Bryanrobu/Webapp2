@@ -5,27 +5,27 @@ class db {
  
     public function __construct() {
        
-        $host = "db";
+        $host = "db"; 
         $db = "mydatabase";
         $user = "user";
         $password = "password";
-        $this->pdo = new PDO("mysql:host=$host;dbname=$db", $user, $password);
-    }
+        $this->pdo = new PDO("mysql:host=$host;dbname=$db", $user, $password); 
+    } 
 
     public function get_users($name) {
         $sql = "SELECT * FROM users WHERE username = :name";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute(['name' => $name]);
         return $stmt->fetchAll();
-    }
+    } // Function to get all users
 
     public function add_user($username, $password, $email) {
     $stmt = $this->pdo->prepare("INSERT INTO users (username, password, email, is_admin) VALUES (?, ?, ?, 0)");
     return $stmt->execute([$username, $password, $email]);
-}
+} // Function to add a new user
    
     public function get_connection(): PDO {
         return $this->pdo;
-    }
+    } // Function to get the PDO connection object
 }
 

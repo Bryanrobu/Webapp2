@@ -19,7 +19,7 @@ $activiteiten = $_POST["activiteiten"];
 $stmt = $conn->prepare("
     INSERT INTO reizen (land, adress, omschrijving, beschrijving, faciliteiten, activiteiten)
     VALUES (:land, :bestemming, :omschrijving, :beschrijving, :faciliteiten, :activiteiten)
-");
+"); // Prepare the SQL statement to insert a new travel entry
 
 $stmt->execute([
     'land' => $land,

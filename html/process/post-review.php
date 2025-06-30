@@ -9,9 +9,9 @@ if (!$is_logged_in) {
     die("You must be logged in for this.");
 }
 
-if ($_SERVER['REQUEST_METHOD'] === "POST") {
+if ($_SERVER['REQUEST_METHOD'] === "POST") { 
 
-    $score = $_POST["score"];
+    $score = $_POST["score"]; 
     $content = $_POST["content"];
     $travel_id = $_POST["travel_id"];
 
@@ -31,8 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
         $db = new db();
         $pdo = $db->get_connection();
 
-        $stmt = $pdo->prepare("INSERT INTO recensies (user_id, content, score, reis_id) VALUES (:user_id, :content, :score, :reis_id)");
-        $stmt->execute(["user_id" => $_SESSION["id"], "content" => $content, "score" => $score, "reis_id" => $travel_id]);
+        $stmt = $pdo->prepare("INSERT INTO recensies (user_id, content, score, reis_id) VALUES (:user_id, :content, :score, :reis_id)"); // Prepare the SQL statement to insert the review
+        $stmt->execute(["user_id" => $_SESSION["id"], "content" => $content, "score" => $score, "reis_id" => $travel_id]); // Execute the statement with the provided parameters
     }
     header("location: /reizen-details.php?id=$travel_id");
 }
