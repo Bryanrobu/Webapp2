@@ -20,11 +20,11 @@ $is_logged_in = isset($_SESSION["user"]);
     $db = new db();
     $conn = $db->get_connection();
     $result = [];
-    $id = $_GET["id"];
-    if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id'])) {
-        $sql = "SELECT * FROM reizen WHERE id = :id";
+    $id = $_GET["id"]; // Get the id from the URL parameters
+    if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id'])) { // Check if the request method is GET and id is set
+        $sql = "SELECT * FROM reizen WHERE id = :id"; // Prepare the SQL statement to fetch travel details by id
         $stmt = $conn->prepare($sql);
-        $stmt->execute(['id' => $id]);
+        $stmt->execute(['id' => $id]); // Execute the statement with the id parameter
         $result = $stmt->fetchAll();
         $row = $result[0] ?? null;
     }
@@ -60,11 +60,11 @@ $is_logged_in = isset($_SESSION["user"]);
 
                     <?php
                     if ($_GET["error"] ?? null == "already_booked") {
-                        echo '<div class="center"><div class="boek-nu-knop">Je hebt deze reis al geboekt!</div></div>';
+                        echo '<div class="center"><div class="boek-nu-knop">Je hebt deze reis al geboekt!</div></div>'; // Display a message if the user has already booked this trip
                     } else {
                         echo '<form class="center column" method="post" action="process/boeken.php?id=' . $row["id"] . '">
                                         <button type="submit" class="boek-nu-knop">Boek nu</button>
-                                    </form>';
+                                    </form>'; // Display the booking button if the user has not booked this trip yet
                     }
                     ?>
 
@@ -84,19 +84,19 @@ $is_logged_in = isset($_SESSION["user"]);
                 $pdo = $db->get_connection();
 
 
-                $template = '<div class="reviews column"> <h1 class="review-template-name"> %s </h1> <h2 class="review-template-stars"> %s </h2>  <h3 class="review-template-message"> %s </h3> </div>';
+                $template = '<div class="reviews column"> <h1 class="review-template-name"> %s </h1> <h2 class="review-template-stars"> %s </h2>  <h3 class="review-template-message"> %s </h3> </div>'; // Template for displaying each review
 
-                $stmt = $pdo->prepare("SELECT * FROM recensies WHERE reis_id=:reis_id");
-                $stmt->execute(["reis_id" => $_GET["id"]]);
+                $stmt = $pdo->prepare("SELECT * FROM recensies WHERE reis_id=:reis_id"); // Prepare the SQL statement to fetch reviews for the specific travel id
+                $stmt->execute(["reis_id" => $_GET["id"]]); // Execute the statement with the travel id parameter
                 $rows = $stmt->fetchAll();
 
                 foreach ($rows as $row) {
 
-                    $stmt = $pdo->prepare("SELECT * FROM users WHERE id=:id");
-                    $stmt->execute(["id" => $row["user_id"]]);
+                    $stmt = $pdo->prepare("SELECT * FROM users WHERE id=:id"); // Prepare the SQL statement to fetch user details by user id
+                    $stmt->execute(["id" => $row["user_id"]]); // Execute the statement with the user id parameter
                     $user = $stmt->fetch();
 
-                    echo sprintf($template, $user["username"], $row["score"] > 0 ? "Score: " . $row["score"] . "/5" : "", $row["content"], );
+                    echo sprintf($template, $user["username"], $row["score"] > 0 ? "Score: " . $row["score"] . "/5" : "", $row["content"], ); // Display each review using the template, including the username, score, and content
                 }
 
                 ?>

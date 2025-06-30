@@ -2,7 +2,7 @@
 
 session_start();
 $is_admin = $_SESSION["admin"] ?? false;
-$is_logged_in = isset($_SESSION["user"]);
+$is_logged_in = isset($_SESSION["user"]); // Check if the user is logged in and is an admin
 
 
 if (!$is_admin) {

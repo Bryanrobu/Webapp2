@@ -2,19 +2,19 @@
 session_start();
 $is_logged_in = isset($_SESSION["user"]);
 
-if (!isset($_SESSION["user"])) {
+if (!isset($_SESSION["user"])) { 
     header("location: /");
     exit;
 }
 
-$username = $_SESSION["user"];
+$username = $_SESSION["user"]; 
 $email = $_SESSION["mail"];
 
 require 'process/db.php';
 
 $db = new db();
 $conn = $db->get_connection();
-$users = $db->get_users($username);
+$users = $db->get_users($username); // Fetch user details from the database
 
 $row = $users[0] ?? null;
 
@@ -30,9 +30,9 @@ $stmt = $conn->prepare("
         FROM reizen
         JOIN user_reizen ON reizen.id = user_reizen.reis_id
         WHERE user_reizen.user_id = :user_id
-    ");
+    "); // Prepare the SQL statement to fetch booked trips for the user
 $stmt->execute(['user_id' => $user_id]);
-$geboekte_reizen = $stmt->fetchAll();
+$geboekte_reizen = $stmt->fetchAll(); // Fetch all booked trips for the user
 
 ?>
 
@@ -60,7 +60,7 @@ $geboekte_reizen = $stmt->fetchAll();
                     <a href="/admin/admin.php">
                         <p class="account-button pointer">Admin pagina</p>
                     </a>
-                <?php endif; ?>
+                <?php endif; ?> 
 
                 <a href="process/logout-process.php">
                     <p class="account-button pointer">Uitloggen</p>
@@ -69,7 +69,7 @@ $geboekte_reizen = $stmt->fetchAll();
         </div>
         <h2 class="reizen-headtxt center">Mijn geboekte reizen</h2>
         <div class="reizen-lijst">
-            <?php if (empty($geboekte_reizen)): ?>
+            <?php if (empty($geboekte_reizen)): ?> 
                 <p class="geen-reizen-txt center">Je hebt nog geen reizen geboekt.</p>
             <?php else: ?>
                 <?php foreach ($geboekte_reizen as $reis): ?>

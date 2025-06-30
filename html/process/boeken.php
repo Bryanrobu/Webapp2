@@ -10,18 +10,18 @@ $db = new db();
 $conn = $db->get_connection();
 
 $reis = $_GET["id"] ?? null;
-$user = $_SESSION["id"];
+$user = $_SESSION["id"]; 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && $reis) {
     $stmt = $conn->prepare("SELECT COUNT(*) FROM user_reizen WHERE user_id = :user_id AND reis_id = :reis_id");
     $stmt->execute(['user_id' => $user, 'reis_id' => $reis]);
-    $exists = $stmt->fetchColumn();
+    $exists = $stmt->fetchColumn(); // Check if the user has already booked the trip
 
     if (!$exists) {
-        $stmt = $conn->prepare("INSERT INTO user_reizen (user_id, reis_id) VALUES (:user_id, :reis_id)");
+        $stmt = $conn->prepare("INSERT INTO user_reizen (user_id, reis_id) VALUES (:user_id, :reis_id)"); // Insert the booking into the user_reizen table
         $stmt->execute([
             'user_id' => $user,
-            'reis_id' => $reis
+            'reis_id' => $reis 
         ]);
         header("Location: /account.php?id=" . $user);
     } else {

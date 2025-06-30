@@ -23,24 +23,62 @@ $is_logged_in = isset($_SESSION["user"]);
             <button type="submit" class="verzend-knop">Zoeken</button>
         </form>
 
+        <?php
+        require_once 'process/db.php';
+        $db = new db();
+        $conn = $db->get_connection(); //connectie maken met de database
+        $sql = "SELECT reizen.id, reizen.land AS bestemming, COUNT(user_reizen.id) AS aantal_boekingen
+            FROM reizen 
+            JOIN user_reizen ON reizen.id = user_reizen.reis_id 
+            GROUP BY reizen.land, reizen.id 
+            ORDER BY aantal_boekingen DESC"; // SQL-query om de populairste bestemmingen te krijgen
+        $stmt = $conn->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC); // Voer de query uit en haal de resultaten op
+        ?>
+
         <div class="row mobile-column">
             <div class="homepage-bestemmingen-cont center column">
                 <h1 class="homepage-bestemmingen-title">Populaire bestemmingen</h1>
-                <div class="populaire-bestemmingen-blokje">
-                </div>
-                <div class="populaire-bestemmingen-blokje">
-                </div>
-                <div class="populaire-bestemmingen-blokje">
-                </div>
+                <?php
+                if ($result) {
+                    $top3 = array_slice($result, 0, 3);
+                    foreach ($top3 as $row) { // Loop door de resultaten en toon de bestemmingen
+                        ?>
+                        <div class="populaire-bestemmingen-blokje center column">
+                            <h2><?php echo $row['bestemming']; ?></h2>
+                            <a href="reizen-details.php?id=<?php echo ($row['id']); ?>" class="go-to-button center">Ga naar
+                                pagina</a>
+                                <!-- echo row id zorgt ervoor dat als je op de bestemming klikt, je naar de details van die specifieke reis gaat. -->
+                        </div> 
+                        <?php
+                    }
+                }
+                ?>
             </div>
             <div class="homepage-bestemmingen-cont column">
                 <h1 class="homepage-bestemmingen-title">Last-minute bestemmingen</h1>
-                <div class="populaire-bestemmingen-blokje">
-                </div>
-                <div class="populaire-bestemmingen-blokje">
-                </div>
-                <div class="populaire-bestemmingen-blokje">
-                </div>
+                <?php
+                $sql = "SELECT id, land FROM reizen WHERE last_minute = 1 ORDER BY RAND() LIMIT 3"; // SQL-query om last-minute bestemmingen te krijgen
+                $stmt = $conn->prepare($sql);
+                $stmt->execute();
+                $lastMinutes = $stmt->fetchAll(PDO::FETCH_ASSOC); // Voer de query uit en haal de resultaten op
+
+                if ($lastMinutes) { // Controleer of er last-minute bestemmingen zijn
+                    foreach ($lastMinutes as $reis) {
+                        ?>
+                        <div class="populaire-bestemmingen-blokje center column">
+                            <h2><?php echo htmlspecialchars($reis['land']); ?></h2>
+                            <a href="reizen-details.php?id=<?php echo $reis['id']; ?>" class="go-to-button center">Ga naar
+                                pagina</a>
+                        </div>
+                        <?php
+                    }
+                } else {
+                    echo "<p>Geen last-minute bestemmingen beschikbaar.</p>";
+                }
+                ?>
+
             </div>
         </div>
         <div class="home-page-welkom-cont center">
