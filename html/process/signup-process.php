@@ -5,6 +5,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pass = $_POST["password"];
     $email = $_POST["email"];
 
+    $hashed_pass = password_hash($pass, PASSWORD_ARGON2ID);
+
     require('db.php');
 
     $db = new db();
@@ -17,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    $success = $db->add_user($user, $pass, $email);
+    $success = $db->add_user($user, $hashed_pass, $email);
     if ($success) {
         $users = $db->get_users($user);
         $row = $users[0] ?? null;
